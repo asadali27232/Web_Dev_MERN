@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        /* width: 700px; */
+        height: 800px;
+        background-color: chocolate;
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 1fr 70px;
+        /* grid-template-rows: 70px 1fr 70px; */
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .items {
+        /* width: 80px;
+        height: 80px; */
+        background-color: black;
+        /* margin: 10px; */
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: yellow;
+      }
+
+      .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items header">my navigation bar</div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+
+      <div class="items footer"></div>
+    </div>
+  </body>
+</html>

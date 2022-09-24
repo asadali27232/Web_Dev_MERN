@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flex Model</title>
+    
+    <style>
+        *{
+            p-bottom: 0;
+        }
+        .container {
+            width: 1200px;
+            height: 1000px;
+            border: 10px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        
+        .items {
+            width: 200px;
+            height: 200px;
+            border: 8px solid red;
+            margin: 5px;
+            
+        }
+        
+        #item1 {
+            /* align-self: flex-start; */
+        }
+        
+        #item2 {
+            order: -1;
+        }
+        
+        #item4 {
+            /* align-self: flex-end ; */
+            
+        }
+    
+    
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="items" id="item1">
+        <img src="1.jpg" width="200" height="200" alt="">
+    </div>
+    <div class="items" id="item2">
+        <img src="2.jpg" width="200" height="200" alt="">
+    </div>
+    <div class="items" id="item3">
+        <img src="3.jpg" width="200" height="200" alt="">
+    </div>
+    <div class="items" id="item4">
+        <img src="4.jpg" width="200" height="200" alt="">
+    </div>
+</div>
+
+</body>
+</html>
