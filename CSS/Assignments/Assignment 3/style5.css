@@ -58,6 +58,7 @@ a {
 }
 form {
   display: grid;
+  font-family: inherit;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
@@ -106,7 +107,7 @@ button:hover {
   outline: none;
   background: #105481;
 }
-.tc{
+.tc {
   margin-right: 20px;
 }
 .total_block {
@@ -152,7 +153,7 @@ button:hover {
   font-size: 14px;
   font-weight: 300;
 }
-table{
+table {
   padding: 5px;
   font-size: 13px;
   align-content: center;
