@@ -27,7 +27,7 @@ header {
 }
 
 .title h5 {
-  color: aliceblue;
+  color: white;
   font-family: sans-serif;
   font-size: 36px;
   letter-spacing: 2px;
@@ -41,7 +41,7 @@ header {
   position: relative;
   left: 180px;
   font-family: sans-serif;
-  color: aliceblue;
+  color: white;
   font-weight: 100;
   letter-spacing: 0.5px;
   font-size: 12px;
@@ -65,7 +65,7 @@ nav ul li {
   display: inline-block;
   font-size: 14px;
   margin: 20px 10px 20px 10px;
-  color: aliceblue;
+  color: white;
 }
 .vertical_line {
   display: inline-block;
@@ -103,7 +103,7 @@ nav ul li {
   display: inline-block;
   left: 0px;
   top: 0px;
-  color: aliceblue;
+  color: white;
   width: 40%;
   height: 100%;
 }
@@ -154,10 +154,30 @@ nav ul li {
   border-radius: 70px;
   height: inherit;
   box-shadow: 1px 1px 3px 1px #7a766f;
+  text-align: center;
 }
 .rectangle1 {
   margin-left: 10vw;
 }
+.rectangle h2 {
+  margin-top: 35px;
+  margin-left: 5%;
+  width: 90%;
+  line-height: 50px;
+  height: 50px;
+  color: white;
+  font-weight: 500;
+}
+.rectangle1 h2 {
+  background-color: #c42d24;
+}
+.rectangle2 h2 {
+  background-color: #886231;
+}
+.rectangle3 h2 {
+  background-color: #3c659d;
+}
+
 footer {
   position: relative;
   top: 1000px;
@@ -201,7 +221,7 @@ footer .div5 {
   margin-left: 1.5%;
 }
 .footer p {
-  color: aliceblue;
+  color: white;
   font-size: 12px;
   font-weight: 100;
   letter-spacing: 1px;
@@ -209,7 +229,7 @@ footer .div5 {
   text-align: justify;
 }
 .footer h2 {
-  color: aliceblue;
+  color: white;
   margin-bottom: 15px;
 }
 footer div form {
@@ -224,6 +244,6 @@ footer div form button {
   padding: 5px 10px;
   margin-top: 5px;
   margin-left: 118px;
-  background-color: #F2CC05;
+  background-color: #f2cc05;
   border: none;
 }
