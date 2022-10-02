@@ -189,12 +189,16 @@ footer {
   padding: 25px;
   height: 200px;
 }
+footer .div1 {
+  margin-left: 1.5%;
+}
 footer .div5 {
   position: relative;
   top: -100px;
   display: block;
   height: 10px;
   width: 80%;
+  margin-left: 1.5%;
 }
 .footer p {
   color: aliceblue;
@@ -207,4 +211,19 @@ footer .div5 {
 .footer h2 {
   color: aliceblue;
   margin-bottom: 15px;
+}
+footer div form {
+  height: 250;
+}
+footer div form input {
+  width: 80%;
+  margin: 5px 0px;
+  height: 25px;
+}
+footer div form button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-left: 118px;
+  background-color: #F2CC05;
+  border: none;
 }
