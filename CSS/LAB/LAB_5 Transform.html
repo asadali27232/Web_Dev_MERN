@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+
+<style>
+
+
+
+
+    #transform
+        {
+                width: 200px;
+                height: 200px;
+                background-color: maroon;
+                border: 12px solid green;
+                position: relative;
+                animation-name: fsA22;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-delay: 2000ms;
+
+                
+        }
+        
+        @keyframes fsA22 {
+    from{ top: 0px; }
+    to{ top: 300px; }
+    
+}
+
+        #transform img
+        {
+                    /* transition: 2s ease all; */
+        }
+        #transform:hover
+        {
+                    /* transform: translate(250px, 250px); */
+                    /* transform: rotate(180deg); */
+                    /* transform: scale(3.0); */
+                    /* transform: skew(-45deg); */
+        }
+</style>
+
+
+</head>
+<body>
+    
+        <div id="transform">
+                    <img src="salman.jpg" width="200" height="200" alt="">
+        </div>
+
+
+
+
+</body>
+</html>
