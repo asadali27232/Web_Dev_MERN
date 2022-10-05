@@ -143,11 +143,12 @@ nav ul li {
   text-shadow: 1px 1px 5px #161513;
 }
 .rectangles {
-  position: absolute;
-  top: 600px;
-  height: 700px;
+  position: relative;
+  top: 170px;
+  height: 850px;
 }
 .rectangle {
+  position: absolute;
   display: inline-block;
   width: 25vw;
   margin: 15px;
@@ -156,10 +157,33 @@ nav ul li {
   box-shadow: 1px 1px 3px 1px #7a766f;
   text-align: center;
 }
-.rectangle1 {
-  margin-left: 10vw;
+.rectangles p {
+  padding: 15px;
+  line-height: 20px;
+  text-align: justify;
 }
-.rectangle h2 {
+.rectangles button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-left: 200px;
+  color: white;
+  border-radius: 20px;
+  background-color: #956f30;
+  border: none;
+}
+.rectangle1 {
+  left: 8%;
+}
+.rectangle2 {
+  left: 35%;
+}
+.rectangle3 {
+  left: 62%;
+}
+.rectangles img {
+  padding: 15px;
+}
+.rectangles h2 {
   margin-top: 35px;
   margin-left: 5%;
   width: 90%;
@@ -178,9 +202,13 @@ nav ul li {
   background-color: #3c659d;
 }
 
+.rectangle2 p {
+ /* padding: 15px 15px 15px 0px; */
+}
+
 footer {
   position: relative;
-  top: 1000px;
+  top: 250px;
   height: 350px;
 }
 .bg_footer {
@@ -237,8 +265,9 @@ footer div form {
 }
 footer div form input {
   width: 80%;
+  padding: 8px;
   margin: 5px 0px;
-  height: 25px;
+  height: 12px;
 }
 footer div form button {
   padding: 5px 10px;
