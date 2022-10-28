@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
+  <head>
     <title>Document</title>
 
-<style>
+    <style>
+      #transform {
+        width: 200px;
+        height: 200px;
+        background-color: maroon;
+        border: 12px solid green;
+        /* position: relative;
+        animation-name: fsA22;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 2000ms; */
+      }
 
-
-
-
-    #transform
-        {
-                width: 200px;
-                height: 200px;
-                background-color: maroon;
-                border: 12px solid green;
-                position: relative;
-                animation-name: fsA22;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-delay: 2000ms;
-
-                
+      @keyframes fsA22 {
+        from {
+          top: 0px;
         }
-        
-        @keyframes fsA22 {
-    from{ top: 0px; }
-    to{ top: 300px; }
-    
-}
-
-        #transform img
-        {
-                    /* transition: 2s ease all; */
+        to {
+          top: 300px;
         }
-        #transform:hover
-        {
-                    /* transform: translate(250px, 250px); */
-                    /* transform: rotate(180deg); */
-                    /* transform: scale(3.0); */
-                    /* transform: skew(-45deg); */
-        }
-</style>
+      }
 
-
-</head>
-<body>
-    
-        <div id="transform">
-                    <img src="salman.jpg" width="200" height="200" alt="">
-        </div>
-
-
-
-
-</body>
+      #transform {
+        transition: all 2s ease-in-out 1s;
+        transform: translate(250px, 250px);
+        /* transform: rotate(180deg); */
+        /* transform: scale(3); */
+        /* transform: skew(-45deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="transform">
+      <img
+        src="https://images.unsplash.com/photo-1611643378160-39d6dd915b69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWF0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        width="200"
+        height="200"
+        alt=""
+      />
+    </div>
+  </body>
 </html>

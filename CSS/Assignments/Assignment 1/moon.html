@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Moon</title>
     <style>
-        body {
-            background-image: url("https://images.hdqwalls.com/wallpapers/clear-sky-night-landscape-4k-1e.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url("https://i.pinimg.com/originals/79/07/be/7907befc485ca9382f5b55834f9bc8a6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #circle {
+        position: relative;
+        background: rgb(232, 222, 96);
+        border-radius: 50%;
+        height: 77px;
+        width: 77px;
+        margin: auto;
+        animation-name: moonToSun;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.1s;
+        animation-iteration-count: 1;
+      }
+      @keyframes moonToSun {
+        0% {
+          top: 8.25cm;
         }
-        #circle {
-            position: absolute;
-            background: rgb(232, 222, 96);
-            border-radius: 50%;
-            height: 77px;
-            width: 77px;
-            top: 8.25cm;
-            left: 16cm;
+        50% {
+          top: 7cm;
         }
-        
+        100% {
+          top: 0cm;
+        }
+      }
+      @keyframes animateProgress {
+        0% {
+          width: 10px;
+        }
+        80% {
+          width: 40%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      .progress {
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        bottom: 0px;
+        background-color: yellow;
+        animation: animateProgress 2s ease-in-out;
+      }
     </style>
-</head>
-<body>
-<div id="circle"></div>
-</body>
+  </head>
+  <body>
+    <div id="circle"></div>
+    <div class="progress"></div>
+  </body>
+  <script>
+    if (circle.style.top === 0) {
+    }
+  </script>
 </html>

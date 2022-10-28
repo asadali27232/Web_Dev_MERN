@@ -116,6 +116,9 @@ body {
   color: black;
   width: 30%;
 }
+.buttons button:hover {
+  cursor: pointer;
+}
 .buttons .black {
   margin: 25px 5px;
   padding: 12px 15px;
