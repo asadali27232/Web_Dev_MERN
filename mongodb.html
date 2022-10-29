@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MongoDBWebDev</title>
+  <link rel="icon" href="/images/wd-logo.png" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><span class="text-primary">WebDev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MERN Stack
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="/css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="/bootstrap.html">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="/javascript.html">JavaScript</a></li>
+              <li><a class="dropdown-item" href="/react.html">React.js</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="/node.html">Node.js</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/express.html">Express.js</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/mongodb.html">MongoDB</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Frontend
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="/css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="/bootstrap.html">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="/javascript.html">JavaScript</a></li>
+              <li><a class="dropdown-item" href="/react.html">React.js</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Backend
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+              <li>
+                <a class="dropdown-item" href="/node.html">Node.js</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/express.html">Express.js</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/mongodb.html">MongoDB</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container-fluid px-5 pt-5 border-top">
+    <footer class="py-2">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Full Stack</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/html.html" class="nav-link p-0 text-muted">HTML</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/css.html" class="nav-link p-0 text-muted">CSS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/bootstrap.html" class="nav-link p-0 text-muted">Bootstrap</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/react.html" class="nav-link p-0 text-muted">React.js</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/node.html" class="nav-link p-0 text-muted">Node.js</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/express.html" class="nav-link p-0 text-muted">Express.js</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="mongodb.html" class="nav-link p-0 text-muted">MongoDB</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Frontend</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/html.html" class="nav-link p-0 text-muted">HTML</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/css.html" class="nav-link p-0 text-muted">CSS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/bootstrap.html" class="nav-link p-0 text-muted">Bootstrap</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/react.html" class="nav-link p-0 text-muted">React.js</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Backend</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/node.html" class="nav-link p-0 text-muted">Node.js</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/express.html" class="nav-link p-0 text-muted">Express.js</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/mongodb.html" class="nav-link p-0 text-muted">MongoDB</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Contact us for more assistance</h5>
+            <p>Your request will be respond as soon as possible.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+              <label for="name" class="visually-hidden">Name</label>
+              <input id="name" type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+              <label for="email" class="visually-hidden">Email address</label>
+              <input id="email" type="text" class="form-control" placeholder="Email address" />
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-2">
+              <label for="query" class="form-label visually-hidden">Describe your query</label>
+              <textarea class="form-control" placeholder="Describe your query" id="query" rows="3"></textarea>
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+              <button class="btn btn-primary" type="button">Send Query</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+        <p>© 2022 Asad Ali, Dev. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" target="_blank" href="https://www.facebook.com/asadalighaffar"><img src="/images/facebook-logo.png"
+                class="bi" width="24" height="24">
+              </img></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" target="_blank" href="https://github.com/asadali27232"><img src="/images/github-icon-1.svg" class="bi"
+                width="24" height="24">
+              </img></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" target="_blank" href="https://www.linkedin.com/in/asad-ali-7773371b1"><img
+                src="/images/linkedin-logo.png" class="bi" width="24" height="24">
+              </img></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
