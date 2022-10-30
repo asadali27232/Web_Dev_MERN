@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roadmap Backend - WebDev</title>
+    <link rel="icon" href="/images/wd-logo.png" type="image/icon type" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roadmap Backend - WebDev</title>
-  <link rel="icon" href="/images/wd-logo.png" type="image/icon type">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="/Web_Dev_MERN/index.html"
@@ -183,249 +186,409 @@
         </div>
       </div>
     </nav>
-    
-  <div class="container col-xxl-8 px-5 rounded-3 border shadow-sm">
-    <div id="home" class="row flex-lg-row-reverse align-items-center g-5 px-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="/images/road-map.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-          height="500" loading="lazy" />
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">
-          Roadmap for Backend
-        </h1>
-        <p class="lead">
-          <strong> Topics to learn</strong>
-        </p>
-        <ul  id="javascript" >
-          <li><a style="text-decoration: none; color: black;" href="#javascript">Javascript</a></li>
-          <li><a style="text-decoration: none; color: black;" href="#node">NodeJS</a></li>
-          <li><a style="text-decoration: none; color: black;" href="#express">ExpressJS</a></li>
-          <li><a style="text-decoration: none; color: black;" href="#mongodb">MongoDB</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container my-4">
-    <div class="row featurette d-flex justify-content-center align-items-center">
-      <div  class="col-md-9">
-        <h2 class="featurette-heading">
-          JavaScript
-          <hr />
-          <span class="text-muted">It's all about BEHAVIOR.</span>
-        </h2>
-        <p class="lead">
-          JavaScrip is a programming language that is one of the core
-          technologies of the World Wide Web, alongside HTML and CSS. As of
-          2022, 98% of websites use JavaScript on the client side for webpage
-          behavior, often incorporating third-party libraries. All major web
-          browsers have a dedicated JavaScript engine to execute the code on
-          users' devices.
-        </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start  pb-3">
-          <button id="node" type="button" class="btn btn-secondary btn-lg px-4 me-md-2"
-            onclick="location.href='/javascript.html'">
-            Start Learning
-          </button>
+
+    <div class="container col-xxl-8 px-5 rounded-3 border shadow-sm">
+      <div
+        id="home"
+        class="row flex-lg-row-reverse align-items-center g-5 px-5"
+      >
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="/images/road-map.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
         </div>
-      </div>
-      <div class="col-md-3 order-md-1">
-        <img class="img-fluid w-50" src="/images/javascript-1.svg" alt="" />
-      </div>
-    </div>
-    <div class="row featurette d-flex justify-content-center align-items-center my-5">
-      <div class="col-md-9 order-md-2">
-        <h2 class="featurette-heading">
-          Node.js
-          <hr />
-          <span class="text-muted">It's all about BACKEND.</span>
-        </h2>
-        <p class="lead">
-          Node.js is an open-source, cross-platform, back-end JavaScript
-          runtime environment that runs on a JavaScript Engine and executes
-          JavaScript code outside a web browser, which was designed to build
-          scalable network applications. Node.js lets developers use
-          JavaScript to write command line tools and for server-side scripting
-        </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start  pb-3">
-          <button id="express" type="button" class="btn btn-secondary btn-lg px-4 me-md-2" onclick="location.href='/node.html'">
-            Start Learning
-          </button>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <img class="img-fluid w-50" src="/images/nodejs-icon.svg" alt="" />
-      </div>
-    </div>
-    <div class="row featurette d-flex justify-content-center align-items-center">
-      <div class="col-md-9">
-        <h2 class="featurette-heading">
-          Express.js
-          <hr />
-          <span class="text-muted">It's all about SERVER-SIDE.</span>
-        </h2>
-        <p class="lead">
-          Express.js, or simply Express, is a back end web application
-          framework for building RESTful APIs with Node.js, released as free
-          and open-source software under the MIT License. It is designed for
-          building web applications and APIs. It has been called the de facto
-          standard server framework for Node.js.
-        </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start  pb-3">
-          <button   id="mongodb" type="button" class="btn btn-secondary btn-lg px-4 me-md-2" onclick="location.href='/express.html'">
-            Start Learning
-          </button>
-        </div>
-      </div>
-      <div class="col-md-3 order-md-1">
-        <img class="img-fluid w-50" src="/images/express-109.svg" alt="" />
-      </div>
-    </div>
-    <div class="row featurette d-flex justify-content-center align-items-center my-5">
-      <div class="col-md-9 order-md-2">
-        <h2 class="featurette-heading">
-          MongoDB
-          <hr />
-          <span class="text-muted">It's all about DATABASE.</span>
-        </h2>
-        <p class="lead">
-          MongoDB is a source-available cross-platform document-oriented
-          database program. Classified as a NoSQL database program, MongoDB
-          uses JSON-like documents with optional schemas. MongoDB is developed
-          by MongoDB Inc. and licensed under the Server Side Public License
-          (SSPL) which is deemed non-free by several distributions.
-        </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start  pb-3">
-          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2" onclick="location.href='mongodb.html'">
-            Start Learning
-          </button>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <img class="img-fluid w-50" src="/images/mongodb-icon-1.svg" alt="" />
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid px-5 pt-5 border-top">
-    <footer class="py-2">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Full Stack</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="/html.html" class="nav-link p-0 text-muted">HTML</a>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Roadmap for Backend</h1>
+          <p class="lead">
+            <strong> Topics to learn</strong>
+          </p>
+          <ul id="javascript">
+            <li>
+              <a style="text-decoration: none; color: black" href="#javascript"
+                >Javascript</a
+              >
             </li>
-            <li class="nav-item mb-2">
-              <a href="/css.html" class="nav-link p-0 text-muted">CSS</a>
+            <li>
+              <a style="text-decoration: none; color: black" href="#node"
+                >NodeJS</a
+              >
             </li>
-            <li class="nav-item mb-2">
-              <a href="/bootstrap.html" class="nav-link p-0 text-muted">Bootstrap</a>
+            <li>
+              <a style="text-decoration: none; color: black" href="#express"
+                >ExpressJS</a
+              >
             </li>
-            <li class="nav-item mb-2">
-              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/react.html" class="nav-link p-0 text-muted">React.js</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/node.html" class="nav-link p-0 text-muted">Node.js</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/express.html" class="nav-link p-0 text-muted">Express.js</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="mongodb.html" class="nav-link p-0 text-muted">MongoDB</a>
+            <li>
+              <a style="text-decoration: none; color: black" href="#mongodb"
+                >MongoDB</a
+              >
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-9">
+          <h2 class="featurette-heading">
+            JavaScript
+            <hr />
+            <span class="text-muted">It's all about BEHAVIOR.</span>
+          </h2>
+          <p class="lead">
+            JavaScrip is a programming language that is one of the core
+            technologies of the World Wide Web, alongside HTML and CSS. As of
+            2022, 98% of websites use JavaScript on the client side for webpage
+            behavior, often incorporating third-party libraries. All major web
+            browsers have a dedicated JavaScript engine to execute the code on
+            users' devices.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
+            <button
+              id="node"
+              type="button"
+              class="btn btn-secondary btn-lg px-4 me-md-2"
+              onclick="location.href='/javascript.html'"
+            >
+              Start Learning
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 order-md-1">
+          <img class="img-fluid w-50" src="/images/javascript-1.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="row featurette d-flex justify-content-center align-items-center my-5"
+      >
+        <div class="col-md-9 order-md-2">
+          <h2 class="featurette-heading">
+            Node.js
+            <hr />
+            <span class="text-muted">It's all about BACKEND.</span>
+          </h2>
+          <p class="lead">
+            Node.js is an open-source, cross-platform, back-end JavaScript
+            runtime environment that runs on a JavaScript Engine and executes
+            JavaScript code outside a web browser, which was designed to build
+            scalable network applications. Node.js lets developers use
+            JavaScript to write command line tools and for server-side scripting
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
+            <button
+              id="express"
+              type="button"
+              class="btn btn-secondary btn-lg px-4 me-md-2"
+              onclick="location.href='/node.html'"
+            >
+              Start Learning
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid w-50" src="/images/nodejs-icon.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-9">
+          <h2 class="featurette-heading">
+            Express.js
+            <hr />
+            <span class="text-muted">It's all about SERVER-SIDE.</span>
+          </h2>
+          <p class="lead">
+            Express.js, or simply Express, is a back end web application
+            framework for building RESTful APIs with Node.js, released as free
+            and open-source software under the MIT License. It is designed for
+            building web applications and APIs. It has been called the de facto
+            standard server framework for Node.js.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
+            <button
+              id="mongodb"
+              type="button"
+              class="btn btn-secondary btn-lg px-4 me-md-2"
+              onclick="location.href='/express.html'"
+            >
+              Start Learning
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3 order-md-1">
+          <img class="img-fluid w-50" src="/images/express-109.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="row featurette d-flex justify-content-center align-items-center my-5"
+      >
+        <div class="col-md-9 order-md-2">
+          <h2 class="featurette-heading">
+            MongoDB
+            <hr />
+            <span class="text-muted">It's all about DATABASE.</span>
+          </h2>
+          <p class="lead">
+            MongoDB is a source-available cross-platform document-oriented
+            database program. Classified as a NoSQL database program, MongoDB
+            uses JSON-like documents with optional schemas. MongoDB is developed
+            by MongoDB Inc. and licensed under the Server Side Public License
+            (SSPL) which is deemed non-free by several distributions.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg px-4 me-md-2"
+              onclick="location.href='mongodb.html'"
+            >
+              Start Learning
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid w-50" src="/images/mongodb-icon-1.svg" alt="" />
+        </div>
+      </div>
+    </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Frontend</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="/html.html" class="nav-link p-0 text-muted">HTML</a>
+    <div class="container-fluid px-5 pt-5 border-top">
+      <footer class="py-2">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Full Stack</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/html.html"
+                  class="nav-link p-0 text-muted"
+                  >HTML</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/Web_Dev_MERN/css.html" class="nav-link p-0 text-muted"
+                  >CSS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/bootstrap.html"
+                  class="nav-link p-0 text-muted"
+                  >Bootstrap</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/javascript.html"
+                  class="nav-link p-0 text-muted"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/react.html"
+                  class="nav-link p-0 text-muted"
+                  >React.js</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/node.html"
+                  class="nav-link p-0 text-muted"
+                  >Node.js</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/express.html"
+                  class="nav-link p-0 text-muted"
+                  >Express.js</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/mongodb.html"
+                  class="nav-link p-0 text-muted"
+                  >MongoDB</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Frontend</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/html.html"
+                  class="nav-link p-0 text-muted"
+                  >HTML</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/Web_Dev_MERN/css.html" class="nav-link p-0 text-muted"
+                  >CSS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/bootstrap.html"
+                  class="nav-link p-0 text-muted"
+                  >Bootstrap</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/javascript.html"
+                  class="nav-link p-0 text-muted"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/react.html"
+                  class="nav-link p-0 text-muted"
+                  >React.js</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Backend</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/javascript.html"
+                  class="nav-link p-0 text-muted"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/node.html"
+                  class="nav-link p-0 text-muted"
+                  >Node.js</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/express.html"
+                  class="nav-link p-0 text-muted"
+                  >Express.js</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/Web_Dev_MERN/mongodb.html"
+                  class="nav-link p-0 text-muted"
+                  >MongoDB</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Contact us for more assistance</h5>
+              <p>Your request will be respond as soon as possible.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+                <label for="name" class="visually-hidden">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+                <label for="email" class="visually-hidden">Email address</label>
+                <input
+                  id="email"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-2">
+                <label for="query" class="form-label visually-hidden"
+                  >Describe your query</label
+                >
+                <textarea
+                  class="form-control"
+                  placeholder="Describe your query"
+                  id="query"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
+                <input id="submit" class="btn btn-primary" type="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top"
+        >
+          <p>© 2022 Asad Ali, Dev. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="link-dark"
+                target="_blank"
+                href="https://www.facebook.com/asadalighaffar"
+              >
+                <img
+                  src="/Web_Dev_MERN/images/facebook-logo.png"
+                  class="bi"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="/css.html" class="nav-link p-0 text-muted">CSS</a>
+            <li class="ms-3">
+              <a
+                class="link-dark"
+                target="_blank"
+                href="https://github.com/asadali27232"
+              >
+                <img
+                  src="/Web_Dev_MERN/images/github-icon-1.svg"
+                  class="bi"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="/bootstrap.html" class="nav-link p-0 text-muted">Bootstrap</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/react.html" class="nav-link p-0 text-muted">React.js</a>
+            <li class="ms-3">
+              <a
+                class="link-dark"
+                target="_blank"
+                href="https://www.linkedin.com/in/asad-ali-7773371b1"
+              >
+                <img
+                  src="/Web_Dev_MERN/images/linkedin-logo.png"
+                  class="bi"
+                  width="24"
+                  height="24"
+              /></a>
             </li>
           </ul>
         </div>
+      </footer>
+    </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Backend</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="/javascript.html" class="nav-link p-0 text-muted">JavaScript</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/node.html" class="nav-link p-0 text-muted">Node.js</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/express.html" class="nav-link p-0 text-muted">Express.js</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="/mongodb.html" class="nav-link p-0 text-muted">MongoDB</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Contact us for more assistance</h5>
-            <p>Your request will be respond as soon as possible.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-              <label for="name" class="visually-hidden">Name</label>
-              <input id="name" type="text" class="form-control" placeholder="Your Name" />
-            </div>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-              <label for="email" class="visually-hidden">Email address</label>
-              <input id="email" type="text" class="form-control" placeholder="Email address" />
-            </div>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-2">
-              <label for="query" class="form-label visually-hidden">Describe your query</label>
-              <textarea class="form-control" placeholder="Describe your query" id="query" rows="3"></textarea>
-            </div>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-              <button class="btn btn-primary" type="button">Send Query</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
-        <p>© 2022 Asad Ali, Dev. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-dark" target="_blank" href="https://www.facebook.com/asadalighaffar"><img
-                src="/images/facebook-logo.png" class="bi" width="24" height="24">
-              </img></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" target="_blank" href="https://github.com/asadali27232"><img
-                src="/images/github-icon-1.svg" class="bi" width="24" height="24">
-              </img></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" target="_blank" href="https://www.linkedin.com/in/asad-ali-7773371b1"><img
-                src="/images/linkedin-logo.png" class="bi" width="24" height="24">
-              </img></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
