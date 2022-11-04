@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript LAB 2</title>
+  </head>
+  <body>
+    <script>
+      // Decision Statement
+      var age = 22;
+
+      if (age >= 18) {
+        console.log("You are eligible for CNIC");
+      } else {
+        console.log("You are NOT eligible for CNIC");
+      }
+
+      var dayNo = parseInt(prompt("Enter the Day Number:"));
+
+      if (dayNo == 1) {
+        console.log("Monday");
+      } else if ((dayNo = 2)) {
+        console.log("Tuesday");
+      } else if ((dayNo = 3)) {
+        console.log("Wednesday");
+      } else if ((dayNo = 4)) {
+        console.log("Thursday");
+      } else if ((dayNo = 5)) {
+        console.log("Friday");
+      } else if ((dayNo = 6)) {
+        console.log("Saturday");
+      } else if ((dayNo = 7)) {
+        console.log("Sunday");
+      } else {
+        console.log("Not a valid day number!");
+      }
+
+      // Loops
+      for (var i = 0; i <= 10; i++) {
+        console.log(i);
+      }
+
+      var i = 0;
+      while (i <= 10) {
+        console.log(i);
+        i++;
+      }
+
+      var i = 0;
+      do {
+        console.log(i);
+        i++;
+      } while (i <= 10);
+
+      console.log("--------------After Loop--------------");
+      console.log(i);
+    </script>
+  </body>
+</html>
