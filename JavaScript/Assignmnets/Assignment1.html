@@ -4,16 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assignment 1 - JavaScript</title>
   </head>
   <body>
     <script>
-      function no1and3() {
-        res = "";
-        for (let i = 1; 1 <= 10; i++) {
-          res += i;
+      var returnRes = "";
+      do {
+        var input = parseInt(
+          prompt(
+            returnRes +
+              "\nEnter Option:\n1- To print 1 to 10 and skip 3 and 9\n2- To print 1 to 10 and square 3 and 9\n3- To sum 1 to 10\n4- To get sum, min and max from given numbers\n5- To Exit Program"
+          )
+        );
+        if (input == 1) {
+          returnRes = no3and9();
+        } else if (input == 2) {
+          returnRes = sq3and9();
+        } else if (input == 3) {
+          returnRes = sum10();
+        } else if (input == 4) {
+          returnRes = min_max();
         }
-        console.log(res);
+      } while (input != 5);
+
+      function no3and9() {
+        var res = "";
+        for (let i = 1; i <= 10; i++) {
+          if (i != 3 && i != 9) res += i + " ";
+        }
+        return "Result: " + res;
+      }
+
+      function sq3and9() {
+        var res = "";
+        for (let i = 1; i <= 10; i++) {
+          if (i == 3 || i == 9) res += i * i + " ";
+          else res += i + " ";
+        }
+        return "Result: " + res;
+      }
+
+      function sum10() {
+        var sum = 0;
+        for (let i = 1; i <= 10; i++) {
+          sum += i;
+        }
+        return "Result: " + sum;
+      }
+
+      function min_max() {
+        var sum = 0;
+        min = 9999999999;
+        max = -9999999999;
+        do {
+          var num = parseInt(prompt("Enter a number\nEnter -1 to exit"));
+          if (num != -1) sum += num;
+          if (num != -1 && num < min) min = num;
+          if (num > max) max = num;
+        } while (num != -1);
+        return (
+          "Result: " + "sum = " + sum + ", min = " + min + " and max = " + max
+        );
       }
     </script>
   </body>
