@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myh1" class="myclass">this is my heading</h1>
+    <script>
+      var a = window.document;
+      console.log(a);
+
+      //DOM (Document Object Model)
+
+       alert("welcome to BOM")
+         var result = confirm("Are you sure you want to do this?")
+         alert(result)
+      if(result==true)
+      {
+          alert("this is true")
+      }
+      else{
+          alert("this is false")
+      }
+
+         var value1 = parseInt(prompt("Enter the value 1"))
+         var value2 = parseInt(prompt("Enter the value 2"))
+
+          var result = value1+value2
+          alert(result)
+
+              var timeoutID;
+
+      function showAlert() {
+          timeoutID = setTimeout(alert, 3000, 'setTimeout Demo!');
+      }
+
+      function clearAlert() {
+          clearTimeout(timeoutID);
+      }
+
+      showAlert()
+    </script>
+  </body>
+</html>
