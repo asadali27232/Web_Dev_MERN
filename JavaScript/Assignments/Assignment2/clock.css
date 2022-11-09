@@ -2,49 +2,44 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url(/Web_Dev_MERN/wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 #dClock {
   margin: auto;
-   margin-top: 3vh;
-  background: rgb(0, 255, 248);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 255, 248, 1) 0%,
-    rgba(199, 255, 63, 1) 25%,
-    rgba(97, 255, 91, 1) 50%,
-    rgba(198, 237, 48, 1) 75%,
-    rgba(0, 219, 255, 0.9920343137254902) 100%
-  );
+  margin-top: 3vh;
+  background-image: url(/Web_Dev_MERN/clock_bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 70vh;
   border-radius: 30px;
-  border: 3px solid #20290a;
+  border: 5px solid #20290a;
   text-align: center;
 }
 #dClock h1 {
-    display: inline-block;
-    color: #20290a;
+  display: inline-block;
+  color: #20290a;
 }
 #dClock h2 {
-    display: inline-block;
-    color: #20290a;
+  display: inline-block;
+  color: #20290a;
 }
-
 #clock {
   position: relative;
   margin: auto;
   margin-top: 3vh;
   width: 70vh;
   height: 70vh;
-  background: rgb(0, 255, 248);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 255, 248, 1) 0%,
-    rgba(199, 255, 63, 1) 25%,
-    rgba(97, 255, 91, 1) 50%,
-    rgba(198, 237, 48, 1) 75%,
-    rgba(0, 219, 255, 0.9920343137254902) 100%
-  );
+  background-image: url(/Web_Dev_MERN/clock_bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 50%;
-  border: 5px solid #20290a;
+  border: 20px solid #20290a;
 }
 #center {
   position: absolute;

@@ -4,10 +4,12 @@ setInterval(() => {
     var h = d.getHours();
     var m = d.getMinutes();
     var s = d.getSeconds();
+    var n = d.getMilliseconds();
+    console.log(n)
 
     var hRotation = 30 * h + 0.5 * m;
-    var mRotation = 6 * m;
-    var sRotation = 6 * s;
+    var mRotation = 6 * m + 0.1 * s;
+    var sRotation = 6 * s + 0.006 * n;
 
     document.getElementById("hour").style.transform = `rotate(${hRotation}deg)`;
     document.getElementById("min").style.transform = `rotate(${mRotation}deg)`;
@@ -25,6 +27,9 @@ setInterval(() => {
         ap = "AM"
     }
 
+    if (h < 10) {
+        h = "0" + h
+    }
     if (m < 10) {
         m = "0" + m
     }
@@ -38,4 +43,4 @@ setInterval(() => {
     document.getElementById("dSec").innerHTML = s;
     document.getElementById("dAP").innerHTML = ap;
 
-}, 1000);
+}, 1);
