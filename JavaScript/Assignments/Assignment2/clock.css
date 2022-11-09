@@ -34,7 +34,7 @@ body {
   margin-top: 3vh;
   width: 70vh;
   height: 70vh;
-  background-image: url(/Web_Dev_MERN/clock_bg.jpeg);
+  background-image: url(/clock_bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
