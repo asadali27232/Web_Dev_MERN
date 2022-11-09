@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url(/Web_Dev_MERN/wall.jpg);
+  background-image: url(/wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -11,7 +11,7 @@ body {
 #dClock {
   margin: auto;
   margin-top: 3vh;
-  background-image: url(/Web_Dev_MERN/clock_bg.jpeg);
+  background-image: url(/clock_bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
