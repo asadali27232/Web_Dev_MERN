@@ -4,7 +4,7 @@
 }
 body {
   background-image: url(wall.jpg);
-  background-size: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -19,7 +19,7 @@ body {
   border-radius: 30px;
   border: 5px solid #20290a;
   text-align: center;
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 5px 5px 50px black;
 }
 #dClock h1 {
   display: inline-block;
@@ -41,7 +41,7 @@ body {
   background-position: center center;
   border-radius: 50%;
   border: 20px solid #20290a;
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 10px 10px 50px black;
 }
 #center {
   position: absolute;
