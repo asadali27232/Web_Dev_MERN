@@ -15,27 +15,48 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Roboto, sans-serif;
+      }
+      .top_slider {
+        height: 35px;
+        align-items: center;
+        background-color: black;
+        font-size: 13px;
+        letter-spacing: 0.05rem;
+        font-weight: 800;
+        padding: 7px;
+      }
+    </style>
     <title>Hello, world!</title>
   </head>
   <body>
     <div
       id="carouselExampleSlidesOnly"
-      class="carousel slide"
+      class="carousel slide top_slider text-white"
       data-ride="carousel"
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <p class="d-block w-100">FREE SHIPPING IN PAKISTAN</p>
+          <p class="d-block w-100 text-center">FREE SHIPPING IN PAKISTAN</p>
         </div>
         <div class="carousel-item">
-          <p class="d-block w-100">FOR ANY QUERY CONTACT US AT 0325-7001111</p>
+          <p class="d-block w-100 text-center">
+            FOR ANY QUERY CONTACT US AT 0325-7001111
+          </p>
         </div>
         <div class="carousel-item">
-          <p class="d-block w-100">EXCHANGE FORM (CLICK HERE)</p>
+          <p class="d-block w-100 text-center">EXCHANGE FORM (CLICK HERE)</p>
         </div>
         <div class="carousel-item">
-          <p class="d-block w-100">TO CANCEL YOUR ORDER (CLICk HERE)</p>
+          <p class="d-block w-100 text-center">
+            TO CANCEL YOUR ORDER (CLICk HERE)
+          </p>
         </div>
       </div>
     </div>
