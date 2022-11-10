@@ -21,10 +21,6 @@ setInterval(() => {
     } else if (h > 12) {
         h = h - 12
         ap = "PM"
-    } else if (h < 10) {
-        h = "0" + h
-    } else {
-        ap = "AM"
     }
 
     if (h < 10) {
