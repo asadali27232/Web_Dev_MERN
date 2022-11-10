@@ -4,7 +4,7 @@
 }
 body {
   background-image: url(wall.jpg);
-  background-size: fill;
+  background-size: center;
   background-repeat: no-repeat;
   background-position: center center;
 }
