@@ -19,6 +19,7 @@ body {
   border-radius: 30px;
   border: 5px solid #20290a;
   text-align: center;
+  box-shadow: 10px 10px 5px lightblue
 }
 #dClock h1 {
   display: inline-block;
@@ -40,6 +41,7 @@ body {
   background-position: center center;
   border-radius: 50%;
   border: 20px solid #20290a;
+  box-shadow: 10px 10px 5px lightblue
 }
 #center {
   position: absolute;
