@@ -9,26 +9,26 @@
   <body>
     <div class="container">
       <label>
-        Enter Kilometers: 
+        Number:  
         <input id="km" type="text" value="00" />
       </label>
       <label>
-         Bill: 
+         Result: 
         <input id="bill" type="text" value="00" />
       </label>
     </div>
 
     <script>
-        let km = parseInt(prompt("Enter Km"))
+        let km = parseInt(prompt("Enter Number"))
         document.getElementById('km').value = km
 
         console.log(km)
         console.log(bill)
 
-        if (km <= 5) {
-            bill = 20
-        } else if (km > 5) {
-            bill = 20 + ((km-5) * 8)
+        if (km%2 == 0) {
+            bill = "Even"
+        } else {
+            bill = "Odd"
         }
         document.getElementById('bill').value = bill
         console.log(bill)
