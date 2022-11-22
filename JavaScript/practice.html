@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <label>
+        Enter Kilometers: 
+        <input id="km" type="text" value="00" />
+      </label>
+      <label>
+         Bill: 
+        <input id="bill" type="text" value="00" />
+      </label>
+    </div>
+
+    <script>
+        let km = parseInt(prompt("Enter Km"))
+        document.getElementById('km').value = km
+
+        console.log(km)
+        console.log(bill)
+
+        if (km <= 5) {
+            bill = 20
+        } else if (km > 5) {
+            bill = 20 + ((km-5) * 8)
+        }
+        document.getElementById('bill').value = bill
+        console.log(bill)
+    </script>
+  </body>
+</html>
