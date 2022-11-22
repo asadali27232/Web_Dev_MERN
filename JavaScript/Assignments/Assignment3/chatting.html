@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Chatting Screens</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        padding: 0% 20%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .cell {
+        width: 280px;
+        height: 600px;
+        border: 1px solid red;
+        background-image: url("cell2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .top {
+        margin: 0px 20px;
+        margin-top: 55px;
+        height: 40px;
+        border: 1px solid #FC4C0A;
+      }
+      .top h4 {
+        display: inline-block;
+        padding: 20px 0px;
+      }
+      .img {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-image: url("person-icon.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 2px solid #fc4c0a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell" id="cellA">
+        <div class="top">
+          <div class="img"></div>
+          <h4>Person A</h4>
+        </div>
+      </div>
+      <div class="cell" id="cellB"></div>
+    </div>
+    <script></script>
+  </body>
+</html>
