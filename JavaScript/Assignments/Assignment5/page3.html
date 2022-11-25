@@ -5,18 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BARQUE</title>
-    <link rel="stylesheet" href="style3.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .product_image {
+        height: 100%;
+        display: flex;
+        padding: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+      }
+      .big {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 40%;
+        height: inherit;
+      }
+      .small {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+      }
+      .small img {
+        margin-left: 5px;
+      }
+    </style>
   </head>
   <body>
-    <div class="bg_image">
-      <div class="product_image">
-        <div id="imageBig" class="image1"><img src="images/img_1.jpg" width="100%" /></div>
-        <div id="image1" class="image"><img src="images/img_2.jpg" width="100%" /></div>
-        <div id="image2" class="image"><img src="images/img_3.jpg" width="100%" /></div>
-        <div id="image3" class="image"><img src="images/img_4.jpg" width="100%" /></div>
-        <div id="image4" class="image"><img src="images/img_5.jpg" width="100%" /></div>
+    <div class="product_image">
+      <div id="imageBigContainer" class="big">
+        <img id="bigImage" src="images/img_1.jpg" width="280px" />
+      </div>
+      <div class="small">
+        <div class="image" onclick="change('image1')">
+          <img id="image1" src="images/img_1.jpg" width="140x" />
+        </div>
+        <div class="image" onclick="change('image2')">
+          <img id="image2" src="images/img_2.jpg" width="120px" />
+        </div>
+        <div class="image" onclick="change('image3')">
+          <img id="image3" src="images/img_3.jpg" width="120px" />
+        </div>
+        <div class="image" onclick="change('image4')">
+          <img id="image4" src="images/img_4.jpg" width="120px" />
+        </div>
       </div>
     </div>
-    <script src="page3.js" ></script>
+    <script>
+      function change(imageId) {
+        let bigImage = document.getElementById("imageBigContainer");
+        document.getElementById("image1").style.width = `120px`;
+        document.getElementById("image2").style.width = `120px`;
+        document.getElementById("image3").style.width = `120px`;
+        document.getElementById("image4").style.width = `120px`;
+
+        if (imageId == "image1") {
+          bigImage.innerHTML = `<img id="bigImage" src="images/img_1.jpg" width="300px" />`;
+          document.getElementById("image1").style.width = `140px`;
+        } else if (imageId == "image2") {
+          bigImage.innerHTML = `<img id="bigImage" src="images/img_2.jpg" width="300px" />`;
+          document.getElementById("image2").style.width = `140px`;
+        } else if (imageId == "image3") {
+          bigImage.innerHTML = `<img id="bigImage" src="images/img_3.jpg" width="300px" />`;
+          document.getElementById("image3").style.width = `140px`;
+        } else if (imageId == "image4") {
+          bigImage.innerHTML = `<img id="bigImage" src="images/img_4.jpg" width="300px" />`;
+          document.getElementById("image4").style.width = `140px`;
+        }
+      }
+    </script>
   </body>
 </html>
