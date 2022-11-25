@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Chatting Screens</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        padding: 0% 20%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .cell {
+        width: 280px;
+        height: 600px;
+        background-image: url("cell2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 20px;
+        margin-top: 57px;
+        height: 40px;
+        border: 1px solid #fc4c0a;
+        border-radius: 200px;
+      }
+      .top h4 {
+        display: inline-block;
+        padding: 20px 0px;
+        color: #fc4c0a;
+      }
+      .img {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0px 10px;
+        background-image: url("person-icon.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 1px solid #fc4c0a;
+      }
+      .mid {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin: 0px 20px;
+        padding: 5px;
+        height: 67%;
+      }
+      .receive {
+        width: fit-content;
+        max-width: 80%;
+        padding: 10px;
+        margin-bottom: 5px;
+        align-self: flex-start;
+        border: 1px solid #fc4c0a;
+        border-radius: 10px;
+      }
+      .send {
+        align-self: flex-end;
+        width: fit-content;
+        max-width: 80%;
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #fc4c0a;
+        color: white;
+        border-radius: 10px;
+      }
+      .mid p {
+        font-size: 14px;
+      }
+      .line {
+        border-bottom: 1px solid #fc4c0a;
+        margin: 0px 18px 5px 15px;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .bottom .button {
+        background-image: url("send.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+      .bottom input {
+        width: 60%;
+        height: 25px;
+        margin: 0px 5px 0px 25px;
+        padding: 5px 10px;
+        border: 1px solid #fc4c0a;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell" id="cellA">
+        <div class="top">
+          <div class="img"></div>
+          <h4>Person A</h4>
+        </div>
+        <div class="mid" id="screenA">
+          <div class="send"><p>Hello! How are you?</p></div>
+          <div class="receive"><p>Hi! I am fine.</p></div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+          <input type="text" id="messageA" placeholder="Message" value="" />
+          <div class="button" id="buttonA" onclick="send('buttonA')"></div>
+        </div>
+      </div>
+      <div class="cell" id="cellB">
+        <div class="top">
+          <div class="img"></div>
+          <h4>Person B</h4>
+        </div>
+        <div class="mid" id="screenB">
+          <div class="receive"><p>Hello! How are you?</p></div>
+          <div class="send"><p>Hi! I am fine.</p></div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+          <input type="text" id="messageB" placeholder="Message" value="" />
+          <div class="button" id="buttonB" onclick="send('buttonB')"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function send(person) {
+        let screenA = document.getElementById("screenA");
+        let screenB = document.getElementById("screenB");
+
+        if (person == "buttonA") {
+          let messageA = document.getElementById("messageA");
+          if (messageA.value != "") {
+            screenB.innerHTML += `<div class="receive"><p>${messageA.value}</p></div>`;
+            screenA.innerHTML += `<div class="send"><p>${messageA.value}</p></div>`;
+            messageA.value = "";
+          }
+        } else if (person == "buttonB") {
+          let messageB = document.getElementById("messageB");
+          if (messageB.value != "") {
+            screenA.innerHTML += `<div class="receive"><p>${messageB.value}</p></div>`;
+            screenB.innerHTML += `<div class="send"><p>${messageB.value}</p></div>`;
+            messageB.value = "";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
