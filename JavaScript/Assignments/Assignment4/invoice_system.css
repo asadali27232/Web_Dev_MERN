@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    height: 100vh;
+    background-color: lightblue;
+}
+.row {
+    height: inherit;
+}
+.col-lg-4 {
+    padding: 10px;
+    height: inherit;
+    border: 2px solid lightcoral;
+}
