@@ -212,7 +212,10 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid rgba(32, 178, 170, 0.8);
 }
-#qty {
+.cart-box {
+  height: 485px;
+}
+.qty {
   width: fit-content;
   padding: 1px 5px;
   color: white;
