@@ -17,13 +17,258 @@
     <div class="container-fluid">
       <div class="row justify-content-center align-content-center">
         <div class="col-lg-4 m-2 p-3 pt-0" id="prd-sec">
-          <div class="top-title">All Products</div>
+          <div class="top-title"><h4>Products</h4></div>
+          <div id="search-add">
+            <input
+              type="text"
+              name="search-prd"
+              placeholder="Search for product..."
+              id="search-prd"
+              class="input-field"
+              onkeyup="searchProduct()"
+            />
+            <button
+              class="btn-add-product"
+              onclick="addNewProduct('btn-add-product')"
+            >
+              ADD NEW
+            </button>
+          </div>
+          <div class="product-container">
+            <div class="adding-prd" id="new-prd-box">
+              <div class="adding-new-prd-top"><h4>Adding New Product</h4></div>
+              <div class="new-prd-id"></div>
+              <div class="new-prd-name">
+                <input
+                  type="text"
+                  id="add-prd-name"
+                  placeholder="New Product Name"
+                />
+              </div>
+              <div class="new-prd-price">
+                <input
+                  type="text"
+                  id="add-prd-price"
+                  placeholder="New Product Price"
+                />
+              </div>
+              <div class="add-prd">
+                <button
+                  id="btn-add-new-prd"
+                  class="btn-add-product"
+                  onclick="addNewProduct('btn-add-new-prd')"
+                >
+                  ADD
+                </button>
+              </div>
+              <div class="cancel-prd">
+                <button
+                  id="btn-cancel-new-prd"
+                  class="btn-add-product"
+                  onclick="addNewProduct('btn-cancel-new-prd')"
+                >
+                  CANCEL
+                </button>
+              </div>
+            </div>
+            <div class="prd-header">
+              <div class="prd-id"><p>ID</p></div>
+              <div class="prd-name"><p>NAME</p></div>
+              <div class="prd-price"><p>PRICE</p></div>
+              <div class="prd-buy"><p>BUY</p></div>
+            </div>
+            <div class="prd-box">
+              <div class="prd">
+                <div class="prd-id"><p>PRD101</p></div>
+                <div class="prd-name"><p>CAKE 1 POUND</p></div>
+                <div class="prd-price"><p>RS 700</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD102</p></div>
+                <div class="prd-name"><p>BREAD WHITE SMALL</p></div>
+                <div class="prd-price"><p>RS 70</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD103</p></div>
+                <div class="prd-name"><p>EGG</p></div>
+                <div class="prd-price"><p>RS 25</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD104</p></div>
+                <div class="prd-name"><p>OLPERS MILK 1L</p></div>
+                <div class="prd-price"><p>RS 180</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD105</p></div>
+                <div class="prd-name"><p>MILKPACK MILK 1L</p></div>
+                <div class="prd-price"><p>RS 210</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD106</p></div>
+                <div class="prd-name">
+                  <p>BROWNY PASTRY</p>
+                  <p></p>
+                </div>
+                <div class="prd-price"><p>RS 90</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD107</p></div>
+                <div class="prd-name"><p>PIZZA S</p></div>
+                <div class="prd-price"><p>RS 450</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD108</p></div>
+                <div class="prd-name"><p>PIZZA M</p></div>
+                <div class="prd-price"><p>RS 750</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD109</p></div>
+                <div class="prd-name"><p>PIZZA L</p></div>
+                <div class="prd-price"><p>RS 1100</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD110</p></div>
+                <div class="prd-name"><p>PIZZA XL</p></div>
+                <div class="prd-price"><p>RS 1600</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD111</p></div>
+                <div class="prd-name"><p>SPECIAL CAKE 1P</p></div>
+                <div class="prd-price"><p>RS 800</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+              <div class="prd">
+                <div class="prd-id"><p>PRD112</p></div>
+                <div class="prd-name"><p>CAKE 2P</p></div>
+                <div class="prd-price"><p>RS 1200</p></div>
+                <div class="prd-buy">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_fast_cart_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 m-2 p-3 pt-0" id="order-line">
-          <div class="top-title">Order Line</div>
+        <div class="col-lg-4 m-2 p-3 pt-0" id="order-line">
+          <div class="top-title"><h4>Cart</h4></div>
+          <div class="product-container cart-container">
+            <div class="prd-header cart-header">
+              <div class="cart-name"><p>NAME</p></div>
+              <div class="cart-price"><p>PRICE</p></div>
+              <div class="cart-qty"><p>QUANTITY</p></div>
+              <div class="cart-remove"><p>REMOVE</p></div>
+            </div>
+            <div class="prd-box">
+              <div class="prd cart">
+                <div class="cart-name"><p>CAKE 1 POUND</p></div>
+                <div class="cart-price"><p>700</p></div>
+                <div class="cart-qty">
+                  <img
+                    id="remove-from-cart"
+                    src="/images/icons8_minus_60px.png"
+                    alt="BUY"
+                    style="display: inline-block"
+                  />
+                  <button style="display: inline-block" id="qty">08</button>
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_Plus_60px.png"
+                    alt="BUY"
+                    style="display: inline-block"
+                  />
+                </div>
+                <div class="cart-remove">
+                  <img
+                    id="add-to-cart"
+                    src="/images/icons8_xbox_x_60px.png"
+                    alt="BUY"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 m-2 p-3 pt-0" id="bill-sec">
-          <div class="top-title">Billing Section</div>
+        <div class="col-lg-3 m-2 p-3 pt-0" id="bill-sec">
+          <div class="top-title"><h4>Billing</h4></div>
         </div>
       </div>
     </div>
@@ -32,5 +277,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="invoice_system.js"></script>
   </body>
 </html>
