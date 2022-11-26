@@ -1,16 +1,29 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 .container-fluid {
-    height: 100vh;
-    background-color: lightblue;
+  height: 100vh;
 }
 .row {
-    height: inherit;
+  height: inherit;
 }
-.col-lg-4 {
-    padding: 10px;
-    height: inherit;
-    border: 2px solid lightcoral;
+.col-lg-4,
+.col-lg-3 {
+  height: 95%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+}
+.top-title {
+  background-color: lightcoral;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
