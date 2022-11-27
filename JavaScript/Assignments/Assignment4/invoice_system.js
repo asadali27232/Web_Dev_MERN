@@ -65,6 +65,9 @@ function qtyChange(qtyBtn, prdNumber) {
         else
             qty.innerHTML = newQTY
     } else if (qtyBtn == 'remove-from-cart') {
+        if (qty.innerHTML == 1) {
+            removeFromCart(prdNumber)
+        }
         if (qty.innerHTML > 0) {
             newQTY = parseInt(qty.innerHTML) - 1
             if (newQTY < 10)
@@ -129,4 +132,7 @@ function matchWithCart(prdName) {
 function removeFromCart(productToBeRemovedFromCart) {
     let cartBoxPrd = document.getElementsByClassName('cart-box')[0]
     cartBoxPrd.removeChild(cartBoxPrd.querySelector('#' + productToBeRemovedFromCart))
+}
+function emptyCart() {
+    document.getElementsByClassName("cart-box")[0].innerHTML = ``
 }

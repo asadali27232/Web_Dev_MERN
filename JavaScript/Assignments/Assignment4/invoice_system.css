@@ -232,6 +232,10 @@ p {
 .cart-remove {
   width: 10%;
 }
+.empty-cart {
+  margin-top: 5px;
+  width: 100%;
+}
 .logo-container {
   display: flex;
   justify-content: center;
