@@ -7,7 +7,7 @@ function addNewProduct(pressedButton) {
     if (pressedButton == 'btn-add-product') {
         document.getElementsByClassName('new-prd-id')[0].innerHTML = `<p>New Product ID: PRD${prdID}</p>`
         newPrdBox.style.display = 'block'
-        prdBox.style.height = '250px'
+        prdBox.style.height = '35.5vh'
     } else if (pressedButton == 'btn-add-new-prd') {
         let prdName = document.getElementById('add-prd-name');
         let prdPrice = document.getElementById('add-prd-price');
@@ -25,13 +25,13 @@ function addNewProduct(pressedButton) {
                 </div>`;
         prdID = prdID + 1;
         newPrdBox.style.display = 'none'
-        prdBox.style.height = '440px'
+        prdBox.style.height = '65vh'
         document.getElementsByClassName('new-prd-id')[0].innerHTML = `<p></p>`
         document.getElementById('add-prd-name').value = "";
         document.getElementById('add-prd-price').value = "";
     } else if (pressedButton == 'btn-cancel-new-prd') {
         newPrdBox.style.display = 'none'
-        prdBox.style.height = '440px'
+        prdBox.style.height = '65vh'
         document.getElementById('add-prd-name').value = "";
         document.getElementById('add-prd-price').value = "";
     }
