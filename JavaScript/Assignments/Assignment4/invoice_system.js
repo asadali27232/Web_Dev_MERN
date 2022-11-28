@@ -171,5 +171,5 @@ function printInvoice() {
     WinPrint.document.write(prtContent.innerHTML);
     WinPrint.document.close();
     WinPrint.focus();
-    printPageArea('elementID')
+    //printPageArea('elementID')
 }

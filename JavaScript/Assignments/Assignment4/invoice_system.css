@@ -297,3 +297,13 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print,
+  #print * {
+    visibility: visible;
+  }
+}
