@@ -1,5 +1,6 @@
 let prdID = 113;
 let cartCounter = 0;
+
 function addNewProduct(pressedButton) {
     let newPrdBox = document.getElementById("new-prd-box");
     let prdBox = document.getElementsByClassName("prd-box")[0];
@@ -76,6 +77,7 @@ function qtyChange(qtyBtn, prdNumber) {
                 qty.innerHTML = newQTY
         }
     }
+    billing()
 }
 
 function addToCart(id) {
@@ -116,6 +118,7 @@ function addToCart(id) {
               </div>`
         cartCounter++
     }
+    billing()
 }
 function matchWithCart(prdName) {
     let cartBox = document.getElementsByClassName("cart-box")[0]
@@ -132,7 +135,41 @@ function matchWithCart(prdName) {
 function removeFromCart(productToBeRemovedFromCart) {
     let cartBoxPrd = document.getElementsByClassName('cart-box')[0]
     cartBoxPrd.removeChild(cartBoxPrd.querySelector('#' + productToBeRemovedFromCart))
+    billing()
 }
 function emptyCart() {
     document.getElementsByClassName("cart-box")[0].innerHTML = ``
+    billing()
+}
+function billing() {
+    let cartBox = document.getElementsByClassName('cart-box')[0]
+    let billBox = document.getElementsByClassName('bill-box')[0]
+    billBox.children[1].innerHTML = ""
+
+    const gst = []
+    const amount = []
+
+    for (let i = 0; i < cartBox.children.length; i++) {
+        gst[i] = parseFloat(parseFloat(cartBox.children[i].children[1].innerText.slice(3)) * parseFloat(cartBox.children[i].children[2].children[1].innerText) * .17).toFixed(2)
+
+        amount[i] = parseFloat(parseFloat(gst[i]) + (parseFloat(cartBox.children[i].children[2].children[1].innerText) * parseFloat(cartBox.children[i].children[1].innerText.slice(3)))).toFixed(2)
+
+        billBox.children[1].innerHTML += `<div class="table-row">
+                <p class="smaller left">${cartBox.children[i].children[0].innerText}</p>
+                <p class="smaller">${cartBox.children[i].children[2].children[1].innerText}</p>
+                <p class="smaller">${cartBox.children[i].children[1].innerText.slice(3)}</p>
+                <p class="smaller">17.00%</p>
+                <p class="smaller">${gst[i]}</p>
+                <p class="smaller right">${amount[i]}</p>
+              </div>`
+    }
+}
+function printInvoice() {
+    var prtContent = document.getElementsByClassName('invoice-container')[0];
+    console.log(prtContent)
+    var WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    WinPrint.document.write(prtContent.innerHTML);
+    WinPrint.document.close();
+    WinPrint.focus();
+    printPageArea('elementID')
 }

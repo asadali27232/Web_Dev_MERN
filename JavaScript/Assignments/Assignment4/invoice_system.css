@@ -85,7 +85,8 @@ input:focus {
   padding-bottom: 20px;
 }
 .prd-box,
-.cart-box {
+.cart-box,
+.bill-box {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -278,9 +279,16 @@ p {
 .table-row {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 3fr 0.5fr 1fr 1fr 1fr 1fr;
 }
-
+.left {
+  justify-self: left;
+}
+.right {
+  justify-self: right;
+}
 .line {
   border-top: 1px solid rgba(32, 178, 170, 0.8);
   margin-top: 1px;
