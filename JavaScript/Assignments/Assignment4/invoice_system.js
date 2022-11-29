@@ -1,5 +1,35 @@
 let prdID = 113;
 let cartCounter = 0;
+setInvoiceNumber();
+// Setting Date and Time on Invoice
+setInterval(() => {
+    let d = new Date()
+
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+
+    let ap = "am";
+    if (h == 0) {
+        h = 12;
+    } else if (h > 12) {
+        h = h - 12
+        ap = "pm"
+    }
+
+    if (h < 10) {
+        h = "0" + h
+    }
+    if (m < 10) {
+        m = "0" + m
+    }
+
+    if (s < 10) {
+        s = "0" + s
+    }
+
+    document.getElementById('date').innerText = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()} ${h}:${m}:${s}${ap}`
+}, 1000)
 
 function addNewProduct(pressedButton) {
     let newPrdBox = document.getElementById("new-prd-box");
@@ -163,6 +193,45 @@ function billing() {
                 <p class="smaller right">${amount[i]}</p>
               </div>`
     }
+
+    let totalGst = 0.0;
+    gst.forEach(element => {
+        totalGst += parseFloat(element)
+    });
+    let totalAmount = 0.0;
+    amount.forEach(element => {
+        totalAmount += parseFloat(element)
+    });
+    let discount = document.getElementById('input-discount').value
+    if (discount == '') {
+        discount = 0;
+    }
+    let received = document.getElementById('input-received').value
+    if (received == '') {
+        received = 0;
+    }
+    document.getElementById('invoice-total').innerText = (totalAmount - totalGst).toFixed(2)
+
+    document.getElementById('total-gst').innerText = totalGst.toFixed(2)
+
+    document.getElementById('total-amount').innerText = (((totalAmount - totalGst) - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))) + totalGst).toFixed(2)
+
+    document.getElementById('discount-amount').innerText =
+        `${((totalAmount - totalGst) * (parseFloat(discount) / 100.0)).toFixed(2)} (${discount}%)`
+
+    document.getElementById('amount-after-disc').innerText =
+        ((totalAmount - totalGst) - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))).toFixed(2)
+
+    document.getElementById('received').innerText = received
+
+    document.getElementById('cust-balance').innerText = (parseInt(received) - (((totalAmount - totalGst) - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))) + totalGst)).toFixed(2)
+
+    document.getElementById('input-balance').value = (parseInt(received) - (((totalAmount - totalGst) - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))) + totalGst)).toFixed(2)
+
+    document.getElementById('input-receivable').value = (((totalAmount - totalGst)
+        - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))) + totalGst).toFixed(2)
+
+    document.getElementById('grand-total').innerText = (((totalAmount - totalGst) - ((totalAmount - totalGst) * (parseFloat(discount) / 100.0))) + totalGst).toFixed(2)
 }
 function printInvoice() {
     let prtContent = document.getElementsByClassName('invoice-container')[0];
@@ -242,8 +311,35 @@ function printInvoice() {
             display: flex;
             justify-content: space-between;
             }
+            .thanks {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: fit-content;
+            padding: 10px 0px;
+            margin: 0px;
+            align-items: center;
+            }
+            .thanks .line {
+            width: 100%;
+            margin: 5px 0px;
+            border-top: 1px dotted blue;
+            }
         </style>`
     WinPrint.document.close();
     WinPrint.focus();
     WinPrint.print();
+    setInvoiceNumber();
+    document.getElementById('input-discount').value = ""
+    document.getElementById('input-received').value = ""
+    document.getElementById('input-balance').value = ""
+    document.getElementById('input-receivable').value = ""
+    emptyCart()
 }
+function setInvoiceNumber() {
+    let d = new Date()
+    document.getElementById('invoice-number').innerHTML =
+        `<span class="bold">Invoice #</span> ${d.getFullYear()}${d.getMonth()}${d.getDate()}${d.getHours()}${d.getMinutes()}${d.getHours()}`
+}
+
+

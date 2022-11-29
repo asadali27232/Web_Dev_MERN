@@ -265,16 +265,14 @@
               <div class="header">
                 <p class="small bold">Sale Invoice</p>
                 <p class="smaller bold">Link Road, Lahore</p>
-                <p class="smaller">16/11/2022 08:53:00pm</p>
+                <p class="smaller" id="date">00/00/0000 00:00:00pm</p>
               </div>
               <div class="top">
                 <p class="small">
                   <span class="bold">Tax Formation:</span> LTO, Lahore
                 </p>
                 <p class="small"><span class="bold">POS No:</span> 130880</p>
-                <p class="small">
-                  <span class="bold">Invoice #</span> 20112111003320
-                </p>
+                <p class="small" id="invoice-number"></p>
               </div>
               <div class="bill-box">
                 <div class="table">
@@ -298,49 +296,96 @@
                     <p class="smaller">Cash</p>
                   </div>
                   <div class="row2">
-                    <p class="smaller bold">Invoice Total:</p>
-                    <p class="smaller">00</p>
+                    <p class="smaller bold">Invoice Total (GST Exclusive):</p>
+                    <p class="smaller" id="invoice-total">0</p>
                   </div>
                   <div class="row2">
                     <p class="smaller bold">Discount:</p>
-                    <p class="smaller">00</p>
+                    <p class="smaller" id="discount-amount">0 (0%)</p>
                   </div>
                   <div class="row2">
-                    <p class="smaller bold">POS Service Fee:</p>
-                    <p class="smaller">1.00</p>
+                    <p class="smaller bold">Invoice Total (After Discount):</p>
+                    <p class="smaller" id="amount-after-disc">0</p>
                   </div>
                   <div class="line"></div>
                   <div class="row2">
                     <p class="smaller bold">Total GST:</p>
-                    <p class="smaller">236.16</p>
+                    <p class="smaller" id="total-gst">236.16</p>
                   </div>
                   <div class="row2">
                     <p class="smaller bold">Invoice Net Total:</p>
-                    <p class="smaller">1234</p>
+                    <p class="smaller" id="total-amount">0</p>
                   </div>
                   <div class="row2">
                     <p class="smaller bold">Received:</p>
-                    <p class="smaller">1500</p>
+                    <p class="smaller" id="received">0</p>
                   </div>
                   <div class="line"></div>
                   <div class="row2">
                     <p class="smaller bold">Customer Balance:</p>
-                    <p class="smaller">(200)</p>
+                    <p class="smaller" id="cust-balance">(0)</p>
                   </div>
                   <div class="line"></div>
                   <div class="line"></div>
                   <div class="row2">
                     <p class="smaller bold">Total:</p>
-                    <p class="smaller bold">1234</p>
+                    <p class="smaller bold" id="grand-total">0</p>
                   </div>
                   <div class="line"></div>
                   <div class="line"></div>
                 </div>
+                <div class="thanks">
+                  <p class="smaller">
+                    For any Assistance and Online Order, Please Contact
+                  </p>
+                  <p class="smaller bold">Cakes & Bakes Customer Care</p>
+                  <div class="line"></div>
+                  <p class="smaller bold">
+                    Thank you fro visiting Cakes & Bakes
+                  </p>
+                  <p class="smaller bold">
+                    We look forward to welcome you again
+                  </p>
+                </div>
               </div>
             </div>
-            <button class="btn-add-product btn-print" onclick="printInvoice()">
-              PRINT BILL
-            </button>
+            <div class="receive-amount">
+              <div class="label"><p>Receivable</p></div>
+              <div class="label"><p>Received</p></div>
+              <div class="label"><p>Balance</p></div>
+              <input
+                type="text"
+                id="input-receivable"
+                disabled
+                class="input-field input-field2"
+              />
+              <input
+                type="text"
+                id="input-received"
+                class="input-field input-field2"
+                onkeyup="billing()"
+              />
+              <input
+                type="text"
+                id="input-balance"
+                disabled
+                class="input-field input-field2"
+              />
+              <div class="label"><p>Discount %</p></div>
+              <input
+                type="text"
+                id="input-discount"
+                placeholder="Discount (%)"
+                class="input-field input-field2"
+                onkeyup="billing()"
+              />
+              <button
+                class="btn-add-product btn-print"
+                onclick="printInvoice()"
+              >
+                PRINT BILL
+              </button>
+            </div>
           </div>
         </div>
       </div>

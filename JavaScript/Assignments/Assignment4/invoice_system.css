@@ -96,24 +96,28 @@ input:focus {
   overflow-y: auto;
 }
 /* width */
-.prd-box::-webkit-scrollbar {
+.prd-box::-webkit-scrollbar,
+.invoice-container::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-.prd-box::-webkit-scrollbar-track {
+.prd-box::-webkit-scrollbar-track,
+.invoice-container::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
 }
 
 /* Handle */
-.prd-box::-webkit-scrollbar-thumb {
+.prd-box::-webkit-scrollbar-thumb,
+.invoice-container::-webkit-scrollbar-thumb {
   background-color: rgba(32, 178, 170, 0.8);
   border-radius: 20px;
 }
 
 /* Handle on hover */
-.prd-box::-webkit-scrollbar-thumb:hover {
+.prd-box::-webkit-scrollbar-thumb:hover,
+.invoice-container::-webkit-scrollbar-thumb:hover {
   background-color: rgba(32, 178, 170, 0.8);
   border-radius: 20px;
 }
@@ -236,9 +240,18 @@ p {
   margin-top: 5px;
   width: 100%;
 }
-.invoice-container {
+.invoice-box {
   padding: 0;
   margin: 0;
+  height: 82vh;
+}
+.invoice-container {
+  height: 70%;
+  width: 100%;
+  padding: 0;
+  padding-right: 5px;
+  margin: 0;
+  overflow-y: auto;
 }
 .logo-container {
   display: flex;
@@ -300,6 +313,50 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.thanks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0px;
+  margin: 0px;
+  align-items: center;
+}
+.thanks .line {
+  width: 100%;
+  margin: 5px 0px;
+  border-top: 1px dotted rgba(32, 178, 170, 0.8);
+}
+.receive-amount {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 30%;
+  margin-top: 10px;
+  padding: 5px;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(32, 178, 170, 0.8);
+  border-radius: 20px;
+}
+.label {
+  font-size: 15px;
+  color: lightgray;
+}
+.input-field2 {
+  margin: 0px;
+  height: 30px;
+  width: 90%;
+}
+#input-discount {
+  grid-column: span 2;
+  width: 95%;
+}
 .btn-print {
-  width: 40%;
+  width: 100%;
+  color: white;
+  grid-column: span 3;
+  background-color: rgba(32, 178, 170, 0.8);
 }
