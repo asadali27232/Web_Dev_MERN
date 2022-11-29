@@ -165,9 +165,10 @@ function billing() {
     }
 }
 function printInvoice() {
-    var prtContent = document.getElementsByClassName('invoice-container')[0];
+    let prtContent = document.getElementsByClassName('invoice-container')[0];
+
     console.log(prtContent)
-    var WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    let WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     WinPrint.document.write(prtContent.innerHTML);
     WinPrint.document.close();
     WinPrint.focus();
