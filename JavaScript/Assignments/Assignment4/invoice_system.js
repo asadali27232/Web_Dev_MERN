@@ -166,11 +166,84 @@ function billing() {
 }
 function printInvoice() {
     let prtContent = document.getElementsByClassName('invoice-container')[0];
-
-    console.log(prtContent)
-    let WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    let WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=1200,height=900,toolbar=0,scrollbars=0,status=0');
     WinPrint.document.write(prtContent.innerHTML);
+    WinPrint.document.getElementsByTagName('head')[0].innerHTML =
+        `<style>
+            * {
+            padding: 0;
+            margin: 0;
+            }
+            p {
+                color: blue;
+            }
+            body {
+            width: 300px;
+            padding: 10px;
+            font-family: Helvetica, sans-serif;
+            }
+            .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            }
+            .logo {
+            width: 120px;
+            }
+            .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+            #bill-sec p {
+            padding: 0;
+            margin: 0;
+            color: blue;
+            width: fit-content;
+            }
+            .smaller {
+            font-size: 10px;
+            }
+            .small {
+            font-size: 12px;
+            }
+            .bold {
+            font-weight: 600;
+            }
+            .top {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            }
+            .table {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            }
+            .table-row {
+            display: grid;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 3fr 0.5fr 1fr 1fr 1fr 1fr;
+            }
+            .left {
+            justify-self: left;
+            }
+            .right {
+            justify-self: right;
+            }
+            .line {
+            border-top: 1px solid blue;
+            margin-top: 1px;
+            }
+            .row2 {
+            display: flex;
+            justify-content: space-between;
+            }
+        </style>`
     WinPrint.document.close();
     WinPrint.focus();
-    //printPageArea('elementID')
+    WinPrint.print();
 }

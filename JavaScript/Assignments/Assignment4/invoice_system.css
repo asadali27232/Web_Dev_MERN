@@ -4,7 +4,6 @@
 }
 body {
   font-family: Helvetica, sans-serif;
-
   color: white;
 }
 .container-fluid {
@@ -86,7 +85,7 @@ input:focus {
 }
 .prd-box,
 .cart-box,
-.bill-box {
+.invoice-box {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -237,6 +236,10 @@ p {
   margin-top: 5px;
   width: 100%;
 }
+.invoice-container {
+  padding: 0;
+  margin: 0;
+}
 .logo-container {
   display: flex;
   justify-content: center;
@@ -297,4 +300,6 @@ p {
   display: flex;
   justify-content: space-between;
 }
-
+.btn-print {
+  width: 40%;
+}

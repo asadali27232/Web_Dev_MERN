@@ -257,88 +257,90 @@
         </div>
         <div class="col-lg-3 m-2 p-3 pt-0" id="bill-sec">
           <div class="top-title"><h4>Billing</h4></div>
-          <div class="invoice-container" id="print">
-            <div class="logo-container">
-              <img class="logo" src="images/logoX.png" alt="logo" />
-            </div>
-            <div class="header">
-              <p class="small bold">Sale Invoice</p>
-              <p class="smaller bold">Link Road, Lahore</p>
-              <p class="smaller">16/11/2022 08:53:00pm</p>
-            </div>
-            <div class="top">
-              <p class="small">
-                <span class="bold">Tax Formation:</span> LTO, Lahore
-              </p>
-              <p class="small"><span class="bold">POS No:</span> 130880</p>
-              <p class="small">
-                <span class="bold">Invoice #</span> 20112111003320
-              </p>
-            </div>
-            <div class="bill-box">
-              <div class="table">
-                <div class="line"></div>
-                <div class="table-row">
-                  <p class="bold smaller left">Item Name</p>
-                  <p class="bold smaller">Qty</p>
-                  <p class="bold smaller">Rate</p>
-                  <p class="bold smaller">GST(%)</p>
-                  <p class="bold smaller">GST</p>
-                  <p class="bold smaller right">Total</p>
-                </div>
-                <div class="line"></div>
-                <div class="line"></div>
+          <div class="invoice-box">
+            <div class="invoice-container" id="print">
+              <div class="logo-container">
+                <img class="logo" src="images/logoX.png" alt="logo" />
               </div>
-              <div class="table"></div>
-              <div class="table">
-                <div class="line"></div>
-                <div class="row2">
-                  <p class="smaller bold">Payment Mode:</p>
-                  <p class="smaller">Cash</p>
-                </div>
-                <div class="row2">
-                  <p class="smaller bold">Invoice Total:</p>
-                  <p class="smaller">00</p>
-                </div>
-                <div class="row2">
-                  <p class="smaller bold">Discount:</p>
-                  <p class="smaller">00</p>
-                </div>
-                <div class="row2">
-                  <p class="smaller bold">POS Service Fee:</p>
-                  <p class="smaller">1.00</p>
-                </div>
-                <div class="line"></div>
-                <div class="row2">
-                  <p class="smaller bold">Total GST:</p>
-                  <p class="smaller">236.16</p>
-                </div>
-                <div class="row2">
-                  <p class="smaller bold">Invoice Net Total:</p>
-                  <p class="smaller">1234</p>
-                </div>
-                <div class="row2">
-                  <p class="smaller bold">Received:</p>
-                  <p class="smaller">1500</p>
-                </div>
-                <div class="line"></div>
-                <div class="row2">
-                  <p class="smaller bold">Customer Balance:</p>
-                  <p class="smaller">(200)</p>
-                </div>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="row2">
-                  <p class="smaller bold">Total:</p>
-                  <p class="smaller bold">1234</p>
-                </div>
-                <div class="line"></div>
-                <div class="line"></div>
+              <div class="header">
+                <p class="small bold">Sale Invoice</p>
+                <p class="smaller bold">Link Road, Lahore</p>
+                <p class="smaller">16/11/2022 08:53:00pm</p>
               </div>
-              <button class="btn-add-product" onclick="printInvoice()">
-                PRINT BILL
-              </button>
+              <div class="top">
+                <p class="small">
+                  <span class="bold">Tax Formation:</span> LTO, Lahore
+                </p>
+                <p class="small"><span class="bold">POS No:</span> 130880</p>
+                <p class="small">
+                  <span class="bold">Invoice #</span> 20112111003320
+                </p>
+              </div>
+              <div class="bill-box">
+                <div class="table">
+                  <div class="line"></div>
+                  <div class="table-row">
+                    <p class="bold smaller left">Item Name</p>
+                    <p class="bold smaller">Qty</p>
+                    <p class="bold smaller">Rate</p>
+                    <p class="bold smaller">GST(%)</p>
+                    <p class="bold smaller">GST</p>
+                    <p class="bold smaller right">Total</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <div class="table"></div>
+                <div class="table">
+                  <div class="line"></div>
+                  <div class="row2">
+                    <p class="smaller bold">Payment Mode:</p>
+                    <p class="smaller">Cash</p>
+                  </div>
+                  <div class="row2">
+                    <p class="smaller bold">Invoice Total:</p>
+                    <p class="smaller">00</p>
+                  </div>
+                  <div class="row2">
+                    <p class="smaller bold">Discount:</p>
+                    <p class="smaller">00</p>
+                  </div>
+                  <div class="row2">
+                    <p class="smaller bold">POS Service Fee:</p>
+                    <p class="smaller">1.00</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="row2">
+                    <p class="smaller bold">Total GST:</p>
+                    <p class="smaller">236.16</p>
+                  </div>
+                  <div class="row2">
+                    <p class="smaller bold">Invoice Net Total:</p>
+                    <p class="smaller">1234</p>
+                  </div>
+                  <div class="row2">
+                    <p class="smaller bold">Received:</p>
+                    <p class="smaller">1500</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="row2">
+                    <p class="smaller bold">Customer Balance:</p>
+                    <p class="smaller">(200)</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="row2">
+                    <p class="smaller bold">Total:</p>
+                    <p class="smaller bold">1234</p>
+                  </div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
             </div>
+            <button class="btn-add-product btn-print" onclick="printInvoice()">
+              PRINT BILL
+            </button>
           </div>
         </div>
       </div>
