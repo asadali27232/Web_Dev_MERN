@@ -49,7 +49,7 @@ function addNewProduct(pressedButton) {
                 <div class="prd-buy">
                   <img
                     id="${prdID - 101}"
-                    src="/images/icons8_fast_cart_60px.png"
+                    src="images/icons8_fast_cart_60px.png"
                     alt="BUY"
                     onclick="addToCart('${prdID - 101}')"
                   />
@@ -124,7 +124,7 @@ function addToCart(id) {
                 <div class="cart-qty">
                   <img
                     id="remove-from-cart"
-                    src="/images/icons8_minus_60px.png"
+                    src="images/icons8_minus_60px.png"
                     alt="BUY"
                     style="display: inline-block"
                     onclick="qtyChange('remove-from-cart', 'c${cartCounter}')"
@@ -132,7 +132,7 @@ function addToCart(id) {
                   <button style="display: inline-block" class="qty" id="${cartCounter}">01</button>
                   <img
                     id="add-to-cart"
-                    src="/images/icons8_Plus_60px.png"
+                    src="images/icons8_Plus_60px.png"
                     alt="BUY"
                     style="display: inline-block"
                     onclick="qtyChange('add-to-cart', 'c${cartCounter}')"
@@ -141,7 +141,7 @@ function addToCart(id) {
                 <div class="cart-remove" onclick="removeFromCart('c${cartCounter}')">
                   <img
                     id="add-to-cart"
-                    src="/images/icons8_xbox_x_60px.png"
+                    src="images/icons8_xbox_x_60px.png"
                     alt="BUY"
                   />
                 </div>
