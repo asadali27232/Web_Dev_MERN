@@ -32,7 +32,8 @@ function playing(event) {
         player1 = true
         player2 = false
     }
-    
+
     box.removeEventListener('click', playing)
+    console.log(arr)
 
 }
