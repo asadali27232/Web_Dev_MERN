@@ -14,32 +14,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid pt-0 mt-0">
       <div class="row justify-content-center align-content-center">
-        <div class="col-sm-3 m-2 p-3 pt-0" id="prd-sec">
-          <div class="my-container">
-            <div class="player">
-              <img src="images/name-board-arrow.png" alt="" />
-            </div>
+        <div class="col-sm-3 m-2 mt-0 p-3 pt-0" id="prd-sec">
+          <div class="my-player-container">
+            <div class="score"></div>
+            <div class="turn"></div>
+            <div class="player-name"></div>
           </div>
         </div>
-        <div class="col-sm-5 m-2 p-3 pt-0" id="prd-sec">
+        <div class="col-sm-5 m-2 mt-0 p-3 pt-0" id="prd-sec">
           <div class="my-container">
+            <div class="ropeL"></div>
+            <div class="ropeR"></div>
             <div class="game-board">
-              <img src="images/board-lines.png" alt="" />
-              <img src="images/circle-o.png" alt="" />
-              <img src="images/cross-x.png" alt="" />
-              <img src="images/rope.png" alt="" />
-              <img src="images/winner-board.png" alt="" />
-              <img src="images/game-board.png" alt="" />
+              <div class="OX" id="OX1"></div>
+              <div class="OX" id="OX2"></div>
+              <div class="OX" id="OX3"></div>
+              <div class="OX" id="OX4"></div>
+              <div class="OX" id="OX5"></div>
+              <div class="OX" id="OX6"></div>
+              <div class="OX" id="OX7"></div>
+              <div class="OX" id="OX8"></div>
+              <div class="OX" id="OX9"></div>
             </div>
           </div>
         </div>
-        <div class="col-sm-3 m-2 p-3 pt-0" id="prd-sec">
-          <div class="my-container">
-            <div class="player">
-              <img src="images/name-board-shadow.png" alt="" />
-            </div>
+        <div class="col-sm-3 m-2 mt-0 p-3 pt-0" id="prd-sec">
+          <div class="my-player-container">
+            <div class="score"></div>
+            <div class="turn"></div>
+            <div class="player-name R"></div>
           </div>
         </div>
       </div>
