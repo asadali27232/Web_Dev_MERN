@@ -18,33 +18,65 @@
       <div class="row justify-content-center align-content-center">
         <div class="col-sm-3 m-2 mt-0 p-3 pt-0" id="prd-sec">
           <div class="my-player-container">
-            <div class="score"></div>
-            <div class="turn"></div>
-            <div class="player-name"></div>
+            <div class="score">
+              <p class="scoreText">Score</p>
+              <p class="scorePoints" id="p1-score">0</p>
+              <p class="wins">Wins: <span id="p1-win-count-span">0</span></p>
+            </div>
+            <div class="turn">
+              <img
+                id="turnL"
+                src="images/circle-o.png"
+                alt="O"
+                width="50px"
+                height="50px"
+              />
+            </div>
+            <div class="player-name">
+              <input
+                type="text"
+                name="name"
+                id="p1-name-input"
+                value=""
+                onclick="uiAudioPlay()"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-sm-5 m-2 mt-0 p-3 pt-0" id="prd-sec">
+        <div class="col-sm-5 m-2 mt-0 p-3 pt-0" id="mid-screen">
           <div class="my-container">
-            <div class="ropeL"></div>
-            <div class="ropeR"></div>
-            <div class="game-board">
-              <div class="OX" id="OX1"></div>
-              <div class="OX" id="OX2"></div>
-              <div class="OX" id="OX3"></div>
-              <div class="OX" id="OX4"></div>
-              <div class="OX" id="OX5"></div>
-              <div class="OX" id="OX6"></div>
-              <div class="OX" id="OX7"></div>
-              <div class="OX" id="OX8"></div>
-              <div class="OX" id="OX9"></div>
+            <div></div>
+            <div></div>
+            <div class="first-come">
+              <div id="start-new" onclick="startNew()">Start</div>
             </div>
           </div>
         </div>
         <div class="col-sm-3 m-2 mt-0 p-3 pt-0" id="prd-sec">
           <div class="my-player-container">
-            <div class="score"></div>
-            <div class="turn"></div>
-            <div class="player-name R"></div>
+            <div class="score">
+              <p class="scoreText">Score</p>
+              <p class="scorePoints" id="p2-score">0</p>
+              <p class="wins">Wins: <span id="p2-win-count-span">0</span></p>
+            </div>
+            <div class="turn">
+              <img
+                id="turnR"
+                src="images/cross-x.png"
+                alt="X"
+                width="50px"
+                height="50px"
+              />
+            </div>
+            <div class="player-name R">
+              <input
+                type="text"
+                name="name"
+                id="p2-name-input"
+                value=""
+                onclick="uiAudioPlay()"
+              />
+            </div>
           </div>
         </div>
       </div>
