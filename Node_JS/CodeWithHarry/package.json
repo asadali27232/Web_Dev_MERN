@@ -1,0 +1,14 @@
+{
+  "name": "hello-nodejs",
+  "version": "1.0.0",
+  "description": "This is my first node.js project.",
+  "main": "helloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asad Ali",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
