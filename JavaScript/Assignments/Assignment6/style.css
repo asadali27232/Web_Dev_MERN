@@ -17,10 +17,6 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
-.col-sm-5,
-.col-sm-3 {
-  /* border: 1px solid brown; */
-}
 .my-player-container {
   width: 100%;
   height: 94vh;

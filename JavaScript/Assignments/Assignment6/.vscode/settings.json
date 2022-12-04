@@ -1,0 +1,7 @@
+{
+    "css.format.spaceAroundSelectorSeparator": true,
+    "css.lint.boxModel": "ignore",
+    "css.lint.emptyRules": "ignore",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16
+}
