@@ -1,13 +1,14 @@
 const fileSystem = require('fs')
 
-fileSystem.readFile('asad-info.js', 'utf-8', (err, data) => {
-    console.log(data, err)
-});
 // Node.js is non blocking I/O model
-fileSystem.readFile('ali-info.js', 'utf-8', (err, data) => {
-    console.log(data, err)
+const file = fileSystem.readFileSync('test.txt');
+console.log(file.toString(), "1");
+
+fileSystem.readFile('test.txt', 'utf-8', (err, data) => {
+    console.log(data, err, "2")
 });
-// Will be console.log before the above statements
-const file = fileSystem.readFileSync('asad-info.js');
-console.log(file);
+
+console.log("Ya kya hwa");
+
+fileSystem.writeFileSync('test.txt', "Inserted by node.js")
 
