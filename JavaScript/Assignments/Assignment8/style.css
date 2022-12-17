@@ -24,3 +24,11 @@
 .btn-use-temp {
     width: 100%;
 }
+#form-section,
+#experience-section,
+#education-section,
+#skill-section,
+#language-section {
+    display: none;
+    visibility: hidden;
+}
