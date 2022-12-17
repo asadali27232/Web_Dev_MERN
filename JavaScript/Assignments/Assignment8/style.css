@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.cover {
+    height: 100vh;
+    padding: 50px;
+    background-image: url(images/cover-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.cover-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
