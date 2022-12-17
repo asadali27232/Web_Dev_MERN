@@ -1,754 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WebDev</title>
-    <link
-      rel="icon"
-      href="/Web_Dev_MERN/images/wd-logo.png"
-      type="image/icon type"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>WebDev</title>
+        <link
+            rel="icon"
+            href="/Web_Dev_MERN/images/wd-logo.png"
+            type="image/icon type"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+    </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/Web_Dev_MERN/index.html"
-          ><span class="text-primary">WebDev</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/Web_Dev_MERN/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MERN Stack
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/html.html"
-                    >HTML</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/css.html">CSS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/bootstrap.html"
-                    >Bootstrap</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/javascript.html"
-                    >JavaScript</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/react.html"
-                    >React.js</a
-                  >
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/node.html"
-                    >Node.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/express.html"
-                    >Express.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/mongodb.html"
-                    >MongoDB</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Frontend
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/html.html"
-                    >HTML</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/css.html">CSS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/bootstrap.html"
-                    >Bootstrap</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/javascript.html"
-                    >JavaScript</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/react.html"
-                    >React.js</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Backend
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/javascript.html"
-                    >JavaScript</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/node.html"
-                    >Node.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/express.html"
-                    >Express.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/mongodb.html"
-                    >MongoDB</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Web_Dev_MERN/about.html">About Us</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              id="searchText"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              id="btnSearch"
-              class="btn btn-outline-primary"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/Web_Dev_MERN/images/slides1.jpeg"
-            class="d-block img-fluid w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Web Development</h5>
-            <p>
-              Designing and defining, dealing with frontend and backend both.
-            </p>
-            <button class="btn btn-primary" onclick="location.href='#home'">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/Web_Dev_MERN/images/roadmap2.png"
-            class="d-block img-fluid w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Roadmap for MERN Stack</h5>
-            <p>Follow this to become a full stack web developer.</p>
-            <button
-              class="btn btn-primary"
-              onclick="location.href='/Web_Dev_MERN/roadmap.html'"
-            >
-              CHECKOUT
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/Web_Dev_MERN/images/about-slide.png"
-            class="d-block img-fluid w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>You know how it Started?</h5>
-            <p>We took this initiative for you mastery in Web Development.</p>
-            <button
-              class="btn btn-primary"
-              onclick="location.href='/Web_Dev_MERN/about.html'"
-            >
-              ABOUT US
-            </button>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="container col-xxl-8 px-4 py-5">
-      <div
-        id="home"
-        class="row flex-lg-row-reverse align-items-center g-5 py-5"
-      >
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="/Web_Dev_MERN/images/frontend-and-backend.png"
-            class="d-block mx-lg-auto img-fluid"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">
-            Full stack web development
-          </h1>
-          <p class="lead">
-            Full stack technology refers to the entire depth of a computer
-            system application, and full stack developers straddle two separate
-            web development domains: the front end and the back end. The front
-            end includes everything that a client, or site viewer, can see and
-            interact with.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button
-              type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2"
-              onclick="location.href='/Web_Dev_MERN/roadmap.html'"
-            >
-              Roadmap
-            </button>
-            <div class="btn-group">
-              <button
-                type="button"
-                class="btn btn-outline-secondary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                data-bs-display="static"
-                aria-expanded="false"
-              >
-                Learn More
-              </button>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/html.html"
-                    >HTML</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/css.html">CSS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/bootstrap.html"
-                    >Bootstrap</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/javascript.html"
-                    >JavaScript</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/react.html"
-                    >React.js</a
-                  >
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/node.html"
-                    >Node.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/express.html"
-                    >Express.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/mongodb.html"
-                    >MongoDB</a
-                  >
-                </li>
-              </ul>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Web_Dev_MERN/index.html"
+                    ><span class="text-primary">WebDev</span></a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="/Web_Dev_MERN/index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                MERN Stack
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/html.html"
+                                        >HTML</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/css.html"
+                                        >CSS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/bootstrap.html"
+                                        >Bootstrap</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/react.html"
+                                        >React.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/node.html"
+                                        >Node.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/express.html"
+                                        >Express.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/mongodb.html"
+                                        >MongoDB</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Frontend
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/html.html"
+                                        >HTML</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/css.html"
+                                        >CSS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/bootstrap.html"
+                                        >Bootstrap</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/react.html"
+                                        >React.js</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Backend
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/node.html"
+                                        >Node.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/express.html"
+                                        >Express.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/mongodb.html"
+                                        >MongoDB</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Web_Dev_MERN/about.html"
+                                >About Us</a
+                            >
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            id="searchText"
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button
+                            id="btnSearch"
+                            class="btn btn-outline-primary"
+                            type="submit"
+                        >
+                            Search
+                        </button>
+                    </form>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container my-5">
-      <div
-        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
-      >
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Frontend web development</h1>
-          <p class="lead">
-            Front-end web development, also known as client-side development is
-            the practice of producing HTML, CSS and JavaScript for a website or
-            Web Application so that a user can see and interact with them
-            directly.
-          </p>
-          <div
-            class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
-          >
-            <button
-              type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-              onclick="location.href='/Web_Dev_MERN/roadmap-front.html'"
-            >
-              Roadmap
-            </button>
-            <div class="btn-group">
-              <button
-                type="button"
-                class="btn btn-outline-secondary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                data-bs-display="static"
-                aria-expanded="false"
-              >
-                Learn More
-              </button>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/html.html"
-                    >HTML</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/css.html">CSS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/bootstrap.html"
-                    >Bootstrap</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/javascript.html"
-                    >JavaScript</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/react.html"
-                    >React.js</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img
-            class="rounded-lg-3"
-            src="/Web_Dev_MERN/images/web1.jpg"
-            alt=""
-            width="720"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <div
-        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
-      >
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Backend web development</h1>
-          <p class="lead">
-            Back-end development means working on server-side software, which
-            focuses on everything you can't see on a website. Back-end
-            developers ensure the website performs correctly, focusing on
-            databases, back-end logic, application programming interface (APIs),
-            architecture, and servers.
-          </p>
-          <div
-            class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
-          >
-            <button
-              type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-              onclick="location.href='/Web_Dev_MERN/roadmap-back.html'"
-            >
-              Roadmap
-            </button>
-            <div class="btn-group">
-              <button
-                type="button"
-                class="btn btn-outline-secondary dropdown-toggle"
-                data-bs-toggle="dropdown"
-                data-bs-display="static"
-                aria-expanded="false"
-              >
-                Learn More
-              </button>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li>
-                  <a class="dropdown-item" href="javascript.html">JavaScript</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/node.html"
-                    >Node.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/express.html"
-                    >Express.js</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/Web_Dev_MERN/mongodb.html"
-                    >MongoDB</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img
-            class="rounded-lg-3"
-            src="/Web_Dev_MERN/images/web-dev1.jpg"
-            alt=""
-            width="720"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid px-5 pt-5 border-top">
-      <footer class="py-2">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Full Stack</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/html.html"
-                  class="nav-link p-0 text-muted"
-                  >HTML</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="/Web_Dev_MERN/css.html" class="nav-link p-0 text-muted"
-                  >CSS</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/bootstrap.html"
-                  class="nav-link p-0 text-muted"
-                  >Bootstrap</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/javascript.html"
-                  class="nav-link p-0 text-muted"
-                  >JavaScript</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/react.html"
-                  class="nav-link p-0 text-muted"
-                  >React.js</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/node.html"
-                  class="nav-link p-0 text-muted"
-                  >Node.js</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/express.html"
-                  class="nav-link p-0 text-muted"
-                  >Express.js</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/mongodb.html"
-                  class="nav-link p-0 text-muted"
-                  >MongoDB</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Frontend</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/html.html"
-                  class="nav-link p-0 text-muted"
-                  >HTML</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="/Web_Dev_MERN/css.html" class="nav-link p-0 text-muted"
-                  >CSS</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/bootstrap.html"
-                  class="nav-link p-0 text-muted"
-                  >Bootstrap</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/javascript.html"
-                  class="nav-link p-0 text-muted"
-                  >JavaScript</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/react.html"
-                  class="nav-link p-0 text-muted"
-                  >React.js</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Backend</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/javascript.html"
-                  class="nav-link p-0 text-muted"
-                  >JavaScript</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/node.html"
-                  class="nav-link p-0 text-muted"
-                  >Node.js</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/express.html"
-                  class="nav-link p-0 text-muted"
-                  >Express.js</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a
-                  href="/Web_Dev_MERN/mongodb.html"
-                  class="nav-link p-0 text-muted"
-                  >MongoDB</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Contact us for more assistance</h5>
-              <p>Your request will be respond as soon as possible.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-                <label for="name" class="visually-hidden">Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-                <label for="email" class="visually-hidden">Email address</label>
-                <input
-                  id="email"
-                  type="text"
-                  class="form-control"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-2">
-                <label for="query" class="form-label visually-hidden"
-                  >Describe your query</label
-                >
-                <textarea
-                  class="form-control"
-                  placeholder="Describe your query"
-                  id="query"
-                  rows="3"
-                ></textarea>
-              </div>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-3">
-                <input id="submit" class="btn btn-primary" type="submit" />
-              </div>
-            </form>
-          </div>
-        </div>
-
+        </nav>
         <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top"
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
         >
-          <p>© 2022 Asad Ali, Dev. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a
-                class="link-dark"
-                target="_blank"
-                href="https://www.facebook.com/asadalighaffar"
-              >
-                <img
-                  src="/Web_Dev_MERN/images/facebook-logo.png"
-                  class="bi"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a
-                class="link-dark"
-                target="_blank"
-                href="https://github.com/asadali27232"
-              >
-                <img
-                  src="/Web_Dev_MERN/images/github-icon-1.svg"
-                  class="bi"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a
-                class="link-dark"
-                target="_blank"
-                href="https://www.linkedin.com/in/asad-ali-7773371b1"
-              >
-                <img
-                  src="/Web_Dev_MERN/images/linkedin-logo.png"
-                  class="bi"
-                  width="24"
-                  height="24"
-              /></a>
-            </li>
-          </ul>
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="/Web_Dev_MERN/images/slides1.jpeg"
+                        class="d-block img-fluid w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Development</h5>
+                        <p>
+                            Designing and defining, dealing with frontend and
+                            backend both.
+                        </p>
+                        <button
+                            class="btn btn-primary"
+                            onclick="location.href='#home'"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/Web_Dev_MERN/images/roadmap2.png"
+                        class="d-block img-fluid w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Roadmap for MERN Stack</h5>
+                        <p>Follow this to become a full stack web developer.</p>
+                        <button
+                            class="btn btn-primary"
+                            onclick="location.href='/Web_Dev_MERN/roadmap.html'"
+                        >
+                            CHECKOUT
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/Web_Dev_MERN/images/about-slide.png"
+                        class="d-block img-fluid w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>You know how it Started?</h5>
+                        <p>
+                            We took this initiative for you mastery in Web
+                            Development.
+                        </p>
+                        <button
+                            class="btn btn-primary"
+                            onclick="location.href='/Web_Dev_MERN/about.html'"
+                        >
+                            ABOUT US
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      </footer>
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div
+                id="home"
+                class="row flex-lg-row-reverse align-items-center g-5 py-5"
+            >
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img
+                        src="/Web_Dev_MERN/images/frontend-and-backend.png"
+                        class="d-block mx-lg-auto img-fluid"
+                        width="700"
+                        height="500"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
+                        Full stack web development
+                    </h1>
+                    <p class="lead">
+                        Full stack technology refers to the entire depth of a
+                        computer system application, and full stack developers
+                        straddle two separate web development domains: the front
+                        end and the back end. The front end includes everything
+                        that a client, or site viewer, can see and interact
+                        with.
+                    </p>
+                    <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    >
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg px-4 me-md-2"
+                            onclick="location.href='/Web_Dev_MERN/roadmap.html'"
+                        >
+                            Roadmap
+                        </button>
+                        <div class="btn-group">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-expanded="false"
+                            >
+                                Learn More
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/html.html"
+                                        >HTML</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/css.html"
+                                        >CSS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/bootstrap.html"
+                                        >Bootstrap</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/react.html"
+                                        >React.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/node.html"
+                                        >Node.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/express.html"
+                                        >Express.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/mongodb.html"
+                                        >MongoDB</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div
+                class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+            >
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">
+                        Frontend web development
+                    </h1>
+                    <p class="lead">
+                        Front-end web development, also known as client-side
+                        development is the practice of producing HTML, CSS and
+                        JavaScript for a website or Web Application so that a
+                        user can see and interact with them directly.
+                    </p>
+                    <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+                    >
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+                            onclick="location.href='/Web_Dev_MERN/roadmap-front.html'"
+                        >
+                            Roadmap
+                        </button>
+                        <div class="btn-group">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-expanded="false"
+                            >
+                                Learn More
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/html.html"
+                                        >HTML</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/css.html"
+                                        >CSS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/bootstrap.html"
+                                        >Bootstrap</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/react.html"
+                                        >React.js</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img
+                        class="rounded-lg-3"
+                        src="/Web_Dev_MERN/images/web1.jpg"
+                        alt=""
+                        width="720"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div
+                class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+            >
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">
+                        Backend web development
+                    </h1>
+                    <p class="lead">
+                        Back-end development means working on server-side
+                        software, which focuses on everything you can't see on a
+                        website. Back-end developers ensure the website performs
+                        correctly, focusing on databases, back-end logic,
+                        application programming interface (APIs), architecture,
+                        and servers.
+                    </p>
+                    <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+                    >
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+                            onclick="location.href='/Web_Dev_MERN/roadmap-back.html'"
+                        >
+                            Roadmap
+                        </button>
+                        <div class="btn-group">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-expanded="false"
+                            >
+                                Learn More
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="javascript.html"
+                                        >JavaScript</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/node.html"
+                                        >Node.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/express.html"
+                                        >Express.js</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="/Web_Dev_MERN/mongodb.html"
+                                        >MongoDB</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img
+                        class="rounded-lg-3"
+                        src="/Web_Dev_MERN/images/web-dev1.jpg"
+                        alt=""
+                        width="720"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-5 pt-5 border-top">
+            <footer class="py-2">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Full Stack</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/html.html"
+                                    class="nav-link p-0 text-muted"
+                                    >HTML</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/css.html"
+                                    class="nav-link p-0 text-muted"
+                                    >CSS</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/bootstrap.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Bootstrap</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/javascript.html"
+                                    class="nav-link p-0 text-muted"
+                                    >JavaScript</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/react.html"
+                                    class="nav-link p-0 text-muted"
+                                    >React.js</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/node.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Node.js</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/express.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Express.js</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/mongodb.html"
+                                    class="nav-link p-0 text-muted"
+                                    >MongoDB</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Frontend</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/html.html"
+                                    class="nav-link p-0 text-muted"
+                                    >HTML</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/css.html"
+                                    class="nav-link p-0 text-muted"
+                                    >CSS</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/bootstrap.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Bootstrap</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/javascript.html"
+                                    class="nav-link p-0 text-muted"
+                                    >JavaScript</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/react.html"
+                                    class="nav-link p-0 text-muted"
+                                    >React.js</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Backend</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/javascript.html"
+                                    class="nav-link p-0 text-muted"
+                                    >JavaScript</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/node.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Node.js</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/express.html"
+                                    class="nav-link p-0 text-muted"
+                                    >Express.js</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="/Web_Dev_MERN/mongodb.html"
+                                    class="nav-link p-0 text-muted"
+                                    >MongoDB</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Contact us for more assistance</h5>
+                            <p>
+                                Your request will be respond as soon as
+                                possible.
+                            </p>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2 my-3"
+                            >
+                                <label for="name" class="visually-hidden"
+                                    >Name</label
+                                >
+                                <input
+                                    id="name"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your Name"
+                                />
+                            </div>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2 my-3"
+                            >
+                                <label for="email" class="visually-hidden"
+                                    >Email address</label
+                                >
+                                <input
+                                    id="email"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                />
+                            </div>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2 my-2"
+                            >
+                                <label
+                                    for="query"
+                                    class="form-label visually-hidden"
+                                    >Describe your query</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    placeholder="Describe your query"
+                                    id="query"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2 my-3"
+                            >
+                                <input
+                                    id="submit"
+                                    class="btn btn-primary"
+                                    type="submit"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top"
+                >
+                    <p>© 2022 Asad Ali, Dev. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a
+                                class="link-dark"
+                                target="_blank"
+                                href="https://www.facebook.com/asadalighaffar"
+                            >
+                                <img
+                                    src="/Web_Dev_MERN/images/facebook-logo.png"
+                                    class="bi"
+                                    width="24"
+                                    height="24"
+                                />
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a
+                                class="link-dark"
+                                target="_blank"
+                                href="https://github.com/asadali27232"
+                            >
+                                <img
+                                    src="/Web_Dev_MERN/images/github-icon-1.svg"
+                                    class="bi"
+                                    width="24"
+                                    height="24"
+                                />
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a
+                                class="link-dark"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/asad-ali-7773371b1"
+                            >
+                                <img
+                                    src="/Web_Dev_MERN/images/linkedin-logo.png"
+                                    class="bi"
+                                    width="24"
+                                    height="24"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
