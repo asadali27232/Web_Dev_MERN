@@ -4,7 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CvMaker</title>
+        <link
+            rel="shortcut icon"
+            href="images/logo-white.jpg"
+            type="image/x-icon"
+        />
+        <title>CV Designer</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -16,7 +21,7 @@
     <body>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">CV Maker</a>
+                <a class="navbar-brand" href="index.html">CV Designer</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -53,13 +58,10 @@
                 <main class="px-3">
                     <h1>Get Your CV...</h1>
                     <p class="lead">
-                        In three simple steps:
-                        <br />
-                        1. Chose design
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        2. Fill the information form
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        3. Select color and download
+                        Choose a CV template, fill it out, and download in
+                        seconds. Create a professional curriculum vitae in a few
+                        clicks. Just pick one of 18+ CV templates below, add
+                        ready-to-use suggestions, and get the job.
                     </p>
                     <p class="lead">
                         <a
@@ -73,7 +75,7 @@
         </div>
         <div class="container pt-5" id="cd">
             <div class="row">
-                <h1 class="pt-5">Chose Your Design</h1>
+                <h1 class="pt-5">Pick a Template for Your CV</h1>
                 <div class="col-md-4">
                     <div class="card mt-5">
                         <img
@@ -81,12 +83,19 @@
                             src="images/cv1.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Cascade</h4>
                             <p>
                                 Professional CV template. Plenty of information,
                                 no clutter.
                             </p>
+                            <button
+                                id="cv1"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -97,12 +106,19 @@
                             src="images/cv5.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Vibes</h4>
                             <p>
                                 Sleek CV template. A clean format with
                                 minimalist icons for each section.
                             </p>
+                            <button
+                                id="cv2"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -113,12 +129,19 @@
                             src="images/cv3.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Cubic</h4>
                             <p>
                                 Perfect CV template. Readable even when filled
                                 with lots of information.
                             </p>
+                            <button
+                                id="cv3"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -129,12 +152,19 @@
                             src="images/cv4.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Influx</h4>
                             <p>
                                 Elegant CV template. Tells a story, makes sure
                                 it gets heard.
                             </p>
+                            <button
+                                id="cv4"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -145,12 +175,19 @@
                             src="images/cv2.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Enfold</h4>
                             <p>
                                 Two-column CV template. Focuses on your summary,
                                 makes your skills stand out.
                             </p>
+                            <button
+                                id="cv5"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -161,59 +198,62 @@
                             src="images/cv6.png"
                             alt="Card image cap"
                         />
+                        <div class="line"></div>
                         <div class="card-body">
                             <h4>Concept</h4>
                             <p>
                                 Modern CV template. The timeline shows
                                 progression, the icons save space.
                             </p>
+                            <button
+                                id="cv6"
+                                class="btn btn-outline-dark btn-use-temp"
+                            >
+                                USE THIS TEMPLATE
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <footer
-                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-            >
-                <div class="col-md-4 d-flex align-items-center">
-                    <a
-                        href="/"
-                        class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-                    >
-                        <svg class="bi" width="30" height="24">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-                    <span class="mb-3 mb-md-0 text-muted"
-                        >© 2022 Company, Inc</span
-                    >
-                </div>
-
-                <ul
-                    class="nav col-md-4 justify-content-end list-unstyled d-flex"
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark"
+        >
+            <div class="col-md-4 d-flex align-items-center">
+                <a
+                    href="/"
+                    class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
                 >
-                    <li class="ms-3">
-                        <a class="text-muted" href="#"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use></svg
-                        ></a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted" href="#"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use></svg
-                        ></a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted" href="#"
-                            ><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use></svg
-                        ></a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted"
+                    >© 2022 CV Designer, Inc</span
+                >
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter"></use></svg
+                    ></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram"></use></svg
+                    ></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use></svg
+                    ></a>
+                </li>
+            </ul>
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
