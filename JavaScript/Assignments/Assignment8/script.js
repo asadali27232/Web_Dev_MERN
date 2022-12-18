@@ -6,6 +6,9 @@ let skillSectionHidden = true
 let langSectionHidden = true
 
 document.getElementById("form-section-opener").addEventListener('click', function () {
+    document.getElementById('createCV').scrollIntoView({
+        behavior: 'smooth'
+    });
     const formSection = document.getElementById('form-section')
     if (formSectionHidden) {
         document.getElementById('btn-form-open').setAttribute('class', 'rotate-open')
@@ -24,12 +27,16 @@ document.getElementById("form-section-opener").addEventListener('click', functio
     }
 })
 document.getElementById("info-section-opener").addEventListener('click', function () {
+    scrollSec()
     const infoSection = document.getElementById('info-section')
+    document.getElementById('btn-info-open').setAttribute('class', 'rotate-open')
     if (infoSectionHidden) {
-        document.getElementById('btn-info-open').setAttribute('class', 'rotate-open')
-        infoSection.style.display = 'flex'
-        infoSection.style.visibility = 'visible'
-        infoSection.setAttribute('class', 'row col-12 fade-in')
+        setTimeout(() => {
+            infoSection.style.display = 'flex'
+            infoSection.style.visibility = 'visible'
+            infoSection.setAttribute('class', 'row col-12 fade-in')
+        }, 500);
+
         infoSectionHidden = false
         closeAll('info')
     } else {
@@ -43,12 +50,15 @@ document.getElementById("info-section-opener").addEventListener('click', functio
     }
 })
 document.getElementById("experience-section-opener").addEventListener('click', function () {
+    scrollSec()
     const expSection = document.getElementById('experience-section')
     if (expSectionHidden) {
         document.getElementById('btn-exp-open').setAttribute('class', 'rotate-open')
-        expSection.style.display = 'flex'
-        expSection.style.visibility = 'visible'
-        expSection.setAttribute('class', 'row col-12 fade-in')
+        setTimeout(() => {
+            expSection.style.display = 'flex'
+            expSection.style.visibility = 'visible'
+            expSection.setAttribute('class', 'row col-12 fade-in')
+        }, 500);
         expSectionHidden = false
         closeAll('exp')
     } else {
@@ -62,12 +72,15 @@ document.getElementById("experience-section-opener").addEventListener('click', f
     }
 })
 document.getElementById("education-section-opener").addEventListener('click', function () {
+    scrollSec()
     const eduSection = document.getElementById('education-section')
     if (eduSectionHidden) {
         document.getElementById('btn-edu-open').setAttribute('class', 'rotate-open')
-        eduSection.style.display = 'flex'
-        eduSection.style.visibility = 'visible'
-        eduSection.setAttribute('class', 'row col-12 fade-in')
+        setTimeout(() => {
+            eduSection.style.display = 'flex'
+            eduSection.style.visibility = 'visible'
+            eduSection.setAttribute('class', 'row col-12 fade-in')
+        }, 500);
         eduSectionHidden = false
         closeAll('edu')
     } else {
@@ -81,12 +94,15 @@ document.getElementById("education-section-opener").addEventListener('click', fu
     }
 })
 document.getElementById("skill-section-opener").addEventListener('click', function () {
+    scrollSec()
     const skillSection = document.getElementById('skill-section')
     if (skillSectionHidden) {
         document.getElementById('btn-skill-open').setAttribute('class', 'rotate-open')
-        skillSection.style.display = 'flex'
-        skillSection.style.visibility = 'visible'
-        skillSection.setAttribute('class', 'row col-12 fade-in')
+        setTimeout(() => {
+            skillSection.style.display = 'flex'
+            skillSection.style.visibility = 'visible'
+            skillSection.setAttribute('class', 'row col-12 fade-in')
+        }, 500);
         skillSectionHidden = false
         closeAll('skill')
     } else {
@@ -100,12 +116,15 @@ document.getElementById("skill-section-opener").addEventListener('click', functi
     }
 })
 document.getElementById("language-section-opener").addEventListener('click', function () {
+    scrollSec()
     const languageSection = document.getElementById('language-section')
     if (langSectionHidden) {
         document.getElementById('btn-lang-open').setAttribute('class', 'rotate-open')
-        languageSection.style.display = 'flex'
-        languageSection.style.visibility = 'visible'
-        languageSection.setAttribute('class', 'row col-12 fade-in')
+        setTimeout(() => {
+            languageSection.style.display = 'flex'
+            languageSection.style.visibility = 'visible'
+            languageSection.setAttribute('class', 'row col-12 fade-in')
+        }, 500);
         langSectionHidden = false
         closeAll('lang')
     } else {
@@ -166,3 +185,27 @@ function closeAll(openSection) {
             document.getElementById("skill-section-opener").click()
     }
 }
+let cards = document.querySelectorAll('.card')
+let cardsBtn = document.querySelectorAll('.btn-outline-dark')
+
+cards.forEach(card => {
+    card.addEventListener('click', createCV)
+})
+cardsBtn.forEach(btn => {
+    btn.addEventListener('click', createCV)
+})
+
+function createCV(event) {
+    setTimeout(() => {
+        document.getElementById("form-section-opener").click()
+    }, 1000);
+    document.getElementById('createCV').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function scrollSec() {
+    document.getElementById('form-section-opener').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
