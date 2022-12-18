@@ -129,9 +129,3 @@ nav {
         transform: rotate(0deg);
     }
 }
-#cv1Div,
-#cv2Div,
-#cv3Div,
-#cv4Div {
-    background-color: gray;
-}
