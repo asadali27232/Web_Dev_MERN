@@ -5,6 +5,9 @@
 nav {
     height: 55px;
 }
+.red {
+    color: red;
+}
 .cover {
     height: calc(100vh - 55px);
     padding: 50px;
@@ -16,7 +19,7 @@ nav {
     align-items: flex-end;
 }
 .bg-pan-left {
-    animation: bg-pan-left 8s linear infinite alternate-reverse both;
+    animation: bg-pan-left 5s linear infinite alternate-reverse both;
 }
 @keyframes bg-pan-left {
     0% {

@@ -176,30 +176,17 @@
                             />
                         </div>
                         <div class="row col-12" id="info-section">
-                            <div class="col-md-6 mb-3">
-                                <label
-                                    for="fname"
-                                    class="form-label fw-semibold"
-                                >
-                                    First Name
-                                </label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fname"
-                                />
-                            </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-12 mb-3">
                                 <label
                                     for="lname"
                                     class="form-label fw-semibold"
                                 >
-                                    Last Name
+                                    Full Name
                                 </label>
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="lname"
+                                    id="full-name"
                                 />
                             </div>
                             <div class="col-md-12 mb-3">
@@ -243,7 +230,7 @@
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label
-                                    for="pcode"
+                                    for="pCode"
                                     class="form-label fw-semibold"
                                 >
                                     Postal Code
@@ -251,7 +238,7 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="pcode"
+                                    id="pCode"
                                 />
                             </div>
                             <div class="col-md-6 mb-3">
@@ -325,7 +312,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="Wcity"
+                                    for="wCity"
                                     class="form-label fw-semibold"
                                 >
                                     City
@@ -333,12 +320,12 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="Wcity"
+                                    id="wCity"
                                 />
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="Wcountry"
+                                    for="wCountry"
                                     class="form-label fw-semibold"
                                 >
                                     Country
@@ -346,12 +333,12 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="Wcountry"
+                                    id="wCountry"
                                 />
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="sdate"
+                                    for="exp-sDate"
                                     class="form-label fw-semibold"
                                 >
                                     Start Date
@@ -359,12 +346,12 @@
                                 <input
                                     type="date"
                                     class="form-control"
-                                    id="sdate"
+                                    id="exp-sDate"
                                 />
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="edate"
+                                    for="exp-eDate"
                                     class="form-label fw-semibold"
                                 >
                                     End Date
@@ -372,8 +359,32 @@
                                 <input
                                     type="date"
                                     class="form-control"
-                                    id="edate"
+                                    id="exp-eDate"
                                 />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="Present"
+                                        id="exp-present"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="exp-present"
+                                    >
+                                        Currently working here
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button
+                                    class="btn btn-dark col-12"
+                                    onclick="addExp()"
+                                >
+                                    ADD EXPERIENCE
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -418,12 +429,12 @@
                                     id="institute-location"
                                 />
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-12 mb-3">
                                 <label
                                     for="degree"
                                     class="form-label fw-semibold"
                                 >
-                                    Degree
+                                    Degree Title
                                 </label>
                                 <input
                                     type="text"
@@ -433,20 +444,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="field"
-                                    class="form-label fw-semibold"
-                                >
-                                    Field of Study
-                                </label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="field"
-                                />
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label
-                                    for="sdate"
+                                    for="edu-sDate"
                                     class="form-label fw-semibold"
                                 >
                                     Start Date
@@ -454,12 +452,12 @@
                                 <input
                                     type="date"
                                     class="form-control"
-                                    id="sdate"
+                                    id="edu-sDate"
                                 />
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label
-                                    for="edate"
+                                    for="edu-eDate"
                                     class="form-label fw-semibold"
                                 >
                                     End Date
@@ -467,8 +465,32 @@
                                 <input
                                     type="date"
                                     class="form-control"
-                                    id="edate"
+                                    id="edu-eDate"
                                 />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value="Present"
+                                        id="edu-present"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="edu-present"
+                                    >
+                                        Degree ongoing
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button
+                                    class="btn btn-dark col-12"
+                                    onclick="addEdu()"
+                                >
+                                    ADD EDUCATION
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -508,10 +530,21 @@
                                     Rate Your Skill
                                 </label>
                                 <input
-                                    type="number"
-                                    class="form-control"
+                                    type="range"
+                                    class="form-range pt-3"
+                                    min="0"
+                                    max="4"
                                     id="rate-skill"
+                                    value="0"
                                 />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button
+                                    class="btn btn-dark col-12"
+                                    onclick="addSkill()"
+                                >
+                                    ADD SKILL
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -551,10 +584,21 @@
                                     Rate Your Language
                                 </label>
                                 <input
-                                    type="number"
-                                    class="form-control"
+                                    type="range"
+                                    class="form-range pt-3"
+                                    min="0"
+                                    max="4"
                                     id="rate-language"
+                                    value="0"
                                 />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button
+                                    class="btn btn-dark col-12"
+                                    onclick="addLang()"
+                                >
+                                    ADD LANGUAGE
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -572,26 +616,10 @@
                         <p id="cv1-email">asadali27232@gmail.com</p>
 
                         <h3>Skills</h3>
-                        <p>Python</p>
-                        <div class="skill-bar-fill" id="cv1-skill1-fill"></div>
-                        <p class="right">Excellent</p>
-                        <p>C++</p>
-                        <div class="skill-bar-fill" id="cv1-skill2-fill"></div>
-                        <p class="right">Good</p>
-                        <p>Programming</p>
-                        <div class="skill-bar-fill" id="cv1-skill2-fill"></div>
-                        <p class="right">Good</p>
-                        <p>Web Development</p>
-                        <div class="skill-bar-fill" id="cv1-skill2-fill"></div>
-                        <p class="right">Good</p>
+                        <div id="cv1-skill-div"></div>
 
-                        <h3>Language</h3>
-                        <p>English</p>
-                        <div class="skill-bar-fill" id="cv1-lang1-fill"></div>
-                        <p class="right">Poor</p>
-                        <p>Urdu</p>
-                        <div class="skill-bar-fill" id="cv1-lang2-fill"></div>
-                        <p class="right">Excellent</p>
+                        <h3>Languages</h3>
+                        <div id="cv1-lang-div"></div>
                     </div>
                     <div id="cv1-right-pane">
                         <p>
@@ -608,85 +636,12 @@
                         <h3>Experience</h3>
                         <div class="line_bottom"></div>
 
-                        <div class="exp-edu-flex">
-                            <div class="date bold">
-                                <p>
-                                    2023-03- <br />
-                                    Present
-                                </p>
-                            </div>
-                            <div class="exp-edu">
-                                <p class="larger bold">Data Engineer</p>
-                                <p class="address_bold">
-                                    Address, Lahore, pakistan
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Voluptatum error vitae
-                                    deserunt magni. Minima, iure veritatis? Quo
-                                    harum obcaecati sint! Lorem ipsum dolor, sit
-                                    amet consectetur adipisicing elit.
-                                    Distinctio veritatis cum molestiae aut
-                                    provident omnis expedita error veniam quam
-                                    placeat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="exp-edu-flex">
-                            <div class="date bold">
-                                <p>
-                                    2023-03- <br />
-                                    Present
-                                </p>
-                            </div>
-                            <div class="exp-edu">
-                                <p class="larger bold">Data Engineer</p>
-                                <p class="address_bold">
-                                    Address, Lahore, pakistan
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Voluptatum error vitae
-                                    deserunt magni. Minima, iure veritatis? Quo
-                                    harum obcaecati sint! Lorem ipsum dolor, sit
-                                    amet consectetur adipisicing elit.
-                                    Distinctio veritatis cum molestiae aut
-                                    provident omnis expedita error veniam quam
-                                    placeat.
-                                </p>
-                            </div>
-                        </div>
-
+                        <div id="cv1-exp-list"></div>
                         <div class="line_top"></div>
                         <h3>Education</h3>
                         <div class="line_bottom"></div>
 
-                        <div class="exp-edu-flex">
-                            <div class="date bold">
-                                <p>
-                                    2023-03- <br />
-                                    Present
-                                </p>
-                            </div>
-                            <div class="exp-edu">
-                                <p class="larger bold">
-                                    Bachelor of Computer Science
-                                </p>
-                                <p>Address, Lahore, pakistan</p>
-                            </div>
-                        </div>
-                        <div class="exp-edu-flex">
-                            <div class="date bold">
-                                <p>
-                                    2018-03- <br />
-                                    2020-03
-                                </p>
-                            </div>
-                            <div class="exp-edu">
-                                <p class="larger bold">FSc Pre Engineering</p>
-                                <p>Address, Lahore, pakistan</p>
-                            </div>
-                        </div>
+                        <div id="cv1-edu-list"></div>
                     </div>
                 </div>
                 <div class="frame mt-3 col-md-7" id="cv2Div">

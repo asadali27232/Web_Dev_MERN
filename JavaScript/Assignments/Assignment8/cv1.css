@@ -106,3 +106,7 @@
 #cv1Div .exp-edu {
     width: 80%;
 }
+#cv1-edu-list,
+#cv1-exp-list {
+    width: 100%;
+}
