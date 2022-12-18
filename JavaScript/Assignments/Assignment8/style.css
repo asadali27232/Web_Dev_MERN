@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0;
 }
+nav {
+    height: 55px;
+}
 .cover {
-    height: 100vh;
+    height: calc(100vh - 55px);
     padding: 50px;
     background-image: url(images/cover-image.png);
     background-repeat: no-repeat;
@@ -72,7 +75,10 @@
 #experience-section,
 #education-section,
 #skill-section,
-#language-section {
+#language-section,
+#cv2Div,
+#cv3Div,
+#cv4Div {
     display: none;
     visibility: hidden;
 }
@@ -122,4 +128,10 @@
     100% {
         transform: rotate(0deg);
     }
+}
+#cv1Div,
+#cv2Div,
+#cv3Div,
+#cv4Div {
+    background-color: gray;
 }

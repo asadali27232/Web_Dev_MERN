@@ -17,9 +17,13 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/998fbf5b08.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">CV Designer</a>
                 <button
@@ -75,11 +79,11 @@
                 </main>
             </div>
         </div>
-        <div class="container py-5" id="cd">
+        <div class="container py-4" id="cd">
             <div class="row">
-                <h1 class="mt-4">Pick a Template for Your CV</h1>
+                <h1 class="mb-3">Pick a Template for Your CV</h1>
                 <div class="col-md-3">
-                    <div class="card mt-3" id="cv1">
+                    <div class="card mt-3" id="cv1" onclick="createCV('cv1')">
                         <img
                             class="card-img-top"
                             src="images/cv1.png"
@@ -94,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mt-3" id="cv2">
+                    <div class="card mt-3" id="cv2" onclick="createCV('cv2')">
                         <img
                             class="card-img-top"
                             src="images/cv2.png"
@@ -109,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mt-3" id="cv3">
+                    <div class="card mt-3" id="cv3" onclick="createCV('cv3')">
                         <img
                             class="card-img-top"
                             src="images/cv3.png"
@@ -124,7 +128,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mt-3" id="cv4">
+                    <div class="card mt-3" id="cv4" onclick="createCV('cv4')">
                         <img
                             class="card-img-top"
                             src="images/cv4.png"
@@ -143,7 +147,7 @@
         <div class="container-fluid p-5" id="createCV">
             <div
                 id="form-section-opener"
-                class="border-top border-bottom my-3 py-3 d-flex justify-content-between"
+                class="border-top border-bottom mb-3 py-3 d-flex justify-content-between"
             >
                 <h3>Fill the Form and Let us Design it for You</h3>
                 <img
@@ -155,7 +159,7 @@
                 />
             </div>
             <div class="row" id="form-section">
-                <div class="form col-md-8">
+                <div class="form mt-3 col-md-8">
                     <div class="row">
                         <div
                             id="info-section-opener"
@@ -554,13 +558,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="frame col-md-4">
-                    <img
-                        src="images/cv1.png"
-                        class="border"
-                        alt=""
-                        width="100%"
-                    />
+                <div class="frame mt-3 col-md-4" id="cv1Div">
+                    <h1>CV 1</h1>
+                </div>
+                <div class="frame mt-3 col-md-4" id="cv2Div">
+                    <h1>CV 2</h1>
+                </div>
+                <div class="frame mt-3 col-md-4" id="cv3Div">
+                    <h1>CV 3</h1>
+                </div>
+                <div class="frame mt-3 col-md-4" id="cv4Div">
+                    <h1>CV 4</h1>
                 </div>
             </div>
         </div>
@@ -613,22 +621,19 @@
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
-                    <a class="text-muted" href="#"
-                        ><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use></svg
-                    ></a>
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-muted" href="#"
-                        ><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use></svg
-                    ></a>
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </li>
-                <li class="ms-3">
-                    <a class="text-muted" href="#"
-                        ><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use></svg
-                    ></a>
+                <li class="ms-3 me-5">
+                    <a class="text-muted" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
                 </li>
             </ul>
         </footer>

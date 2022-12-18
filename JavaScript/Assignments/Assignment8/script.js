@@ -185,11 +185,6 @@ function closeAll(openSection) {
             document.getElementById("skill-section-opener").click()
     }
 }
-let cards = document.querySelectorAll('.card')
-cards.forEach(card => {
-    card.addEventListener('click', createCV)
-})
-
 function createCV(event) {
     formSectionHidden = true
     setTimeout(() => {
@@ -197,32 +192,60 @@ function createCV(event) {
     }, 1000);
     document.getElementById('createCV').scrollIntoView({
         behavior: 'smooth'
-    });
-    if (event.target.id == 'cv1') {
+    })
+    if (event == 'cv1') {
         cv1()
-    } else if (event.target.id == 'cv2') {
+    } else if (event == 'cv2') {
         cv2()
-    } else if (event.target.id == 'cv3') {
+    } else if (event == 'cv3') {
         cv3()
-    } else if (event.target.id == 'cv4') {
+    } else if (event == 'cv4') {
         cv4()
     }
 }
 function scrollSec() {
-    document.getElementById('form-section-opener').scrollIntoView({
+    document.getElementById('form-section').scrollIntoView({
         behavior: 'smooth'
     });
 }
 
 function cv1() {
-    alert('cv1')
+    document.getElementById('cv1Div').style.display = 'block'
+    document.getElementById('cv1Div').style.visibility = 'visible'
+    document.getElementById('cv2Div').style.display = 'none'
+    document.getElementById('cv2Div').style.visibility = 'hidden'
+    document.getElementById('cv3Div').style.display = 'none'
+    document.getElementById('cv3Div').style.visibility = 'hidden'
+    document.getElementById('cv4Div').style.display = 'none'
+    document.getElementById('cv4Div').style.visibility = 'hidden'
 }
 function cv2() {
-    alert('cv2')
+    document.getElementById('cv1Div').style.display = 'none'
+    document.getElementById('cv1Div').style.visibility = 'hidden'
+    document.getElementById('cv2Div').style.display = 'block'
+    document.getElementById('cv2Div').style.visibility = 'visible'
+    document.getElementById('cv3Div').style.display = 'none'
+    document.getElementById('cv3Div').style.visibility = 'hidden'
+    document.getElementById('cv4Div').style.display = 'none'
+    document.getElementById('cv4Div').style.visibility = 'hidden'
 }
 function cv3() {
-    alert('cv3')
+    document.getElementById('cv1Div').style.display = 'none'
+    document.getElementById('cv1Div').style.visibility = 'hidden'
+    document.getElementById('cv2Div').style.display = 'none'
+    document.getElementById('cv2Div').style.visibility = 'hidden'
+    document.getElementById('cv3Div').style.display = 'block'
+    document.getElementById('cv3Div').style.visibility = 'visible'
+    document.getElementById('cv4Div').style.display = 'none'
+    document.getElementById('cv4Div').style.visibility = 'hidden'
 }
 function cv4() {
-    alert('cv4')
+    document.getElementById('cv1Div').style.display = 'none'
+    document.getElementById('cv1Div').style.visibility = 'hidden'
+    document.getElementById('cv2Div').style.display = 'none'
+    document.getElementById('cv2Div').style.visibility = 'hidden'
+    document.getElementById('cv3Div').style.display = 'none'
+    document.getElementById('cv3Div').style.visibility = 'hidden'
+    document.getElementById('cv4Div').style.display = 'block'
+    document.getElementById('cv4Div').style.visibility = 'visible'
 }
