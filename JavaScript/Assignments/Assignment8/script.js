@@ -186,22 +186,27 @@ function closeAll(openSection) {
     }
 }
 let cards = document.querySelectorAll('.card')
-let cardsBtn = document.querySelectorAll('.btn-outline-dark')
-
 cards.forEach(card => {
     card.addEventListener('click', createCV)
 })
-cardsBtn.forEach(btn => {
-    btn.addEventListener('click', createCV)
-})
 
 function createCV(event) {
+    formSectionHidden = true
     setTimeout(() => {
         document.getElementById("form-section-opener").click()
     }, 1000);
     document.getElementById('createCV').scrollIntoView({
         behavior: 'smooth'
     });
+    if (event.target.id == 'cv1') {
+        cv1()
+    } else if (event.target.id == 'cv2') {
+        cv2()
+    } else if (event.target.id == 'cv3') {
+        cv3()
+    } else if (event.target.id == 'cv4') {
+        cv4()
+    }
 }
 function scrollSec() {
     document.getElementById('form-section-opener').scrollIntoView({
@@ -209,3 +214,15 @@ function scrollSec() {
     });
 }
 
+function cv1() {
+    alert('cv1')
+}
+function cv2() {
+    alert('cv2')
+}
+function cv3() {
+    alert('cv3')
+}
+function cv4() {
+    alert('cv4')
+}
