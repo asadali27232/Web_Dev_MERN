@@ -30,6 +30,16 @@
     grid-template-columns: 1.5fr 3fr;
 } */
 #cv1Div {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+@media print {
+    #cv1Div {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+#cv1Div {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     height: 500px;

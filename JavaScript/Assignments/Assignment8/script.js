@@ -251,7 +251,7 @@ function cv4() {
     document.getElementById('cv4Div').style.visibility = 'visible'
 }
 let inputs = document.getElementsByTagName('input')
-for (let index = 0; index < 7; index++) {
+for (let index = 0; index < 8; index++) {
     const element = inputs[index];
     element.addEventListener('keyup', inputChange)
 
@@ -287,11 +287,14 @@ function inputChange() {
             getElementById('email')
             .value == "" ? "asadali27232@gmail.com" : document.getElementById('email').value
 
+    let about = document.getElementById('about-self').value
+
     document.getElementById('cv1-name').innerText = name
     document.getElementById('cv1-profession').innerText = profession
     document.getElementById('cv1-address').innerText = "" + city + ", " + country + ", " + pCode
     document.getElementById('cv1-number').innerText = phone
     document.getElementById('cv1-email').innerText = email
+    document.getElementById('cv1-about-pera').innerText = about
 }
 
 function addSkill() {
@@ -302,12 +305,14 @@ function addSkill() {
         let arr = ['Poor', 'Not Good', 'Good', 'Great', 'Excellent']
         let arrWidth = ['20%', '40%', '60%', '80%', '100%']
 
-        document.getElementById('cv1-skill-div').innerHTML += `<p id="cv1-skill">${skillName}</p>
+        document.getElementById('cv1-skill-div').innerHTML += `<div>
+                                                                <p id="cv1-skill">${skillName}</p>
                                                                 <div
                                                                     class="skill-bar-fill"
                                                                     id="cv1-skill${skillCount}-fill"
                                                                 ></div>
-                                                            <p class="right">${arr[skillRate]}</p>`
+                                                                <p class="right">${arr[skillRate]}</p>
+                                                            </div>`
 
         document.getElementById(`cv1-skill${skillCount}-fill`).style.width = arrWidth[skillRate]
         skillCount++
@@ -329,12 +334,14 @@ function addLang() {
         let arr = ['Poor', 'Not Good', 'Good', 'Great', 'Excellent']
         let arrWidth = ['20%', '40%', '60%', '80%', '100%']
 
-        document.getElementById('cv1-lang-div').innerHTML += `<p id="cv1-skill">${langName}</p>
+        document.getElementById('cv1-lang-div').innerHTML += `<div>
+                                                                <p id="cv1-skill">${langName}</p>
                                                                 <div
                                                                     class="skill-bar-fill"
                                                                     id="cv1-lang${langCount}-fill"
                                                                 ></div>
-                                                            <p class="right">${arr[languageRate]}</p>`
+                                                                <p class="right">${arr[languageRate]}</p>
+                                                            </div>`
 
         document.getElementById(`cv1-lang${langCount}-fill`).style.width = arrWidth[languageRate]
         langCount++
@@ -406,6 +413,7 @@ function addExp() {
     let country = document.getElementById('wCountry')
     let sDate = document.getElementById('exp-sDate')
     let eDate = document.getElementById('exp-eDate')
+    let about = document.getElementById('about-job')
 
     if (job.value != "" && employer.value != "" && city.value != "" && country.value && sDate.value != "" &&
         (eDate.value != "" || document.getElementById('exp-present').checked)) {
@@ -423,7 +431,7 @@ function addExp() {
                                         ${city.value}, ${country.value}
                                     </p>
                                     <p>
-                                        
+                                        ${about.value}
                                     </p>
                                 </div>
                             </div>`
@@ -434,6 +442,7 @@ function addExp() {
         country.value = ""
         eDate.value = ""
         sDate.value = ""
+        about.value = ""
         if (document.getElementById('experience-section').children[0].nodeName == "SPAN") {
             document.getElementById('experience-section')
                 .removeChild(document.getElementById('experience-section').children[0])
@@ -442,4 +451,161 @@ function addExp() {
     } else if (document.getElementById('experience-section').children[0].nodeName != "SPAN") {
         document.getElementById('experience-section').insertAdjacentHTML('afterbegin', '<span class="col-12 red my-2">*Please fill up all the fields</span>')
     }
+}
+function remove(event) {
+    if (event.target.id == 'removeExp' && document.getElementById('cv1-exp-list').children.length > 0) {
+        document.getElementById('cv1-exp-list')
+            .removeChild(document.getElementById('cv1-exp-list')
+                .children[document.getElementById('cv1-exp-list').children.length - 1])
+    } else if (event.target.id == 'removeEdu' && document.getElementById('cv1-edu-list').children.length > 0) {
+        document.getElementById('cv1-edu-list')
+            .removeChild(document.getElementById('cv1-edu-list')
+                .children[document.getElementById('cv1-edu-list').children.length - 1])
+    } else if (event.target.id == 'removeLang' && document.getElementById('cv1-lang-div').children.length > 0) {
+        document.getElementById('cv1-lang-div')
+            .removeChild(document.getElementById('cv1-lang-div')
+                .children[document.getElementById('cv1-lang-div').children.length - 1])
+    } else if (event.target.id == 'remove-skill' && document.getElementById('cv1-skill-div').children.length > 0) {
+        document.getElementById('cv1-skill-div')
+            .removeChild(document.getElementById('cv1-skill-div')
+                .children[document.getElementById('cv1-skill-div').children.length - 1])
+    }
+}
+function printCV(event) {
+    let prtContent = document.getElementById('cv1Div');
+    let printC = `<div class="frame mt-3 col-md-7 overflow-auto" id="cv1Div"> ${prtContent.innerHTML} </div>`
+    let WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=1200,height=900,toolbar=0,scrollbars=0,status=0');
+    WinPrint.document.write(printC);
+    WinPrint.document.getElementsByTagName('head')[0].innerHTML =
+        `<style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #cv1Div {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        @media print {
+            #cv1Div {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        #cv1Div .bold {
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        #cv1Div .address_bold {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #cv1Div p,
+        #cv1Div li {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        #cv1Div .large {
+            font-size: 15px;
+        }
+        #cv1Div .larger {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+        #cv1Div .right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        /* For Print Preview */
+        #cv1Div {
+            width: 8.3in;
+            height: 11.7in;
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+        } 
+        /* #cv1Div {
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+            height: 500px;
+        }*/
+        #cv1-left-pane {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #343946;
+            color: white;
+            padding: 20px;
+        }
+        #cv1-left-pane * {
+            margin: 4px 0;
+            width: 100%;
+        }
+        #cv1-left-pane h3 {
+            background-color: #1f232e;
+            height: 45px;
+            line-height: 45px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -20px;
+            width: calc(100% + 40px);
+            padding-left: 20px;
+        }
+        #cv1Div .skill-bar-fill {
+            background-color: white;
+            height: 8px;
+        }
+        #cv1-skill1-fill {
+            width: 100%;
+        }
+        #cv1-skill2-fill {
+            width: 70%;
+        }
+        #cv1-lang1-fill {
+            width: 40%;
+        }
+        #cv1-lang2-fill {
+            width: 90%;
+        }
+        #cv1-right-pane {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: white;
+            color: #343946;
+            padding: 20px;
+        }
+        #cv1Div .line_top {
+            width: 100%;
+            height: 1px;
+            background-color: #c5c1c1;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #cv1Div .line_bottom {
+            width: 100%;
+            height: 1px;
+            background-color: #c5c1c1;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #cv1Div .exp-edu-flex {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        #cv1Div .date {
+            width: 20%;
+        }
+        #cv1Div .exp-edu {
+            width: 80%;
+        }
+        #cv1-edu-list,
+        #cv1-exp-list {
+            width: 100%;
+        }
+        </style>`
+    WinPrint.document.close();
+    WinPrint.focus();
+    WinPrint.print();
 }

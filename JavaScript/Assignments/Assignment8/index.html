@@ -267,6 +267,19 @@
                                     id="email"
                                 />
                             </div>
+                            <div class="col-md-12 mb-3">
+                                <label
+                                    for="about-self"
+                                    class="form-label fw-semibold"
+                                >
+                                    Tell us about your Self
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="about-self"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -379,6 +392,28 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mb-3">
+                                <label
+                                    for="about-job"
+                                    class="form-label fw-semibold"
+                                >
+                                    Tell us about your Job
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="about-job"
+                                />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <button
+                                    class="btn btn-outline-danger col-12"
+                                    onclick="remove(event)"
+                                    id="removeExp"
+                                >
+                                    REMOVE
+                                </button>
+                            </div>
+                            <div class="col-md-6 mb-3">
                                 <button
                                     class="btn btn-dark col-12"
                                     onclick="addExp()"
@@ -484,7 +519,16 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-md-12 mb-3">
+                            <div class="col-md-6 mb-3">
+                                <button
+                                    class="btn btn-outline-danger col-12"
+                                    onclick="remove(event)"
+                                    id="removeEdu"
+                                >
+                                    REMOVE
+                                </button>
+                            </div>
+                            <div class="col-md-6 mb-3">
                                 <button
                                     class="btn btn-dark col-12"
                                     onclick="addEdu()"
@@ -538,7 +582,16 @@
                                     value="0"
                                 />
                             </div>
-                            <div class="col-md-12 mb-3">
+                            <div class="col-md-6 mb-3">
+                                <button
+                                    class="btn btn-outline-danger col-12"
+                                    onclick="remove(event)"
+                                    id="remove-skill"
+                                >
+                                    REMOVE
+                                </button>
+                            </div>
+                            <div class="col-md-6 mb-3">
                                 <button
                                     class="btn btn-dark col-12"
                                     onclick="addSkill()"
@@ -592,7 +645,16 @@
                                     value="0"
                                 />
                             </div>
-                            <div class="col-md-12 mb-3">
+                            <div class="col-md-6 mb-3">
+                                <button
+                                    class="btn btn-outline-danger col-12"
+                                    onclick="remove(event)"
+                                    id="removeLang"
+                                >
+                                    REMOVE
+                                </button>
+                            </div>
+                            <div class="col-md-6 mb-3">
                                 <button
                                     class="btn btn-dark col-12"
                                     onclick="addLang()"
@@ -602,6 +664,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row pt-3 mt-3 border-top">
+                        <div class="col-md-12 mb-3">
+                            <label for="color" class="form-label fw-semibold">
+                                Chose a Color Scheme
+                            </label>
+                            <input
+                                type="range"
+                                class="form-range pt-3"
+                                min="0"
+                                max="4"
+                                id="color"
+                                value="0"
+                            />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <button
+                                class="btn btn-dark col-12"
+                                onclick="printCV(event)"
+                                id="view"
+                            >
+                                VIEW
+                            </button>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <button
+                                class="btn btn-dark col-12"
+                                onclick="printCV(event)"
+                                id="print"
+                            >
+                                PRINT
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="frame mt-3 col-md-7 overflow-auto" id="cv1Div">
                     <div class="left-flex" id="cv1-left-pane">
@@ -609,7 +704,7 @@
                         <p class="large" id="cv1-profession">Data Scientist</p>
                         <h3>Personal Info</h3>
                         <p class="bold">Address</p>
-                        <p id="cv1-address">Nester Colony Lahore</p>
+                        <p id="cv1-address">Lahore, Pakistan, 54000</p>
                         <p class="bold">Phone</p>
                         <p id="cv1-number">03074315952</p>
                         <p class="bold">E-mail</p>
@@ -622,15 +717,7 @@
                         <div id="cv1-lang-div"></div>
                     </div>
                     <div id="cv1-right-pane">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Inventore sed commodi provident hic illo
-                            labore beatae corrupti aut illum sequi, ipsam ad
-                            ducimus alias temporibus amet minus? Esse tempora
-                            nobis asperiores, impedit magnam omnis magni nostrum
-                            quam veritatis sequi. Aspernatur labore provident,
-                            assumenda earum non eius quidem sint quia iusto.
-                        </p>
+                        <p id="cv1-about-pera"></p>
 
                         <div class="line_top"></div>
                         <h3>Experience</h3>
