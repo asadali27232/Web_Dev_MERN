@@ -476,11 +476,18 @@ function printCV(event) {
     let printC = `<div class="frame mt-3 col-md-7 overflow-auto" id="cv1Div"> ${prtContent.innerHTML} </div>`
     let WinPrint = window.open('', 'Print Invoice', 'left=0,top=0,width=1200,height=900,toolbar=0,scrollbars=0,status=0');
     WinPrint.document.write(printC);
+
+    let colorDarkArray = ['#E9A507', '#FE7A66', '#D0021B', '#1F232E', '#39C3B1', '#BCA97E']
+    let colorLightArray = ['#F9D76C', '#FEB8A9', '#E74C3C', '#2C3E50', '#6DD5C8', '#D9C9A9']
+    let colorDark = colorDarkArray[document.getElementById('color').value]
+    let colorLight = colorLightArray[document.getElementById('color').value]
+
     WinPrint.document.getElementsByTagName('head')[0].innerHTML =
         `<style>
         * {
             padding: 0;
             margin: 0;
+            font-family: 'Roboto', sans-serif;
         }
         #cv1Div {
             -webkit-print-color-adjust: exact;
@@ -532,7 +539,7 @@ function printCV(event) {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            background-color: #343946;
+            background-color: ${colorLight};
             color: white;
             padding: 20px;
         }
@@ -541,7 +548,7 @@ function printCV(event) {
             width: 100%;
         }
         #cv1-left-pane h3 {
-            background-color: #1f232e;
+            background-color: ${colorDark};
             height: 45px;
             line-height: 45px;
             margin-top: 10px;
@@ -571,7 +578,7 @@ function printCV(event) {
             flex-direction: column;
             align-items: flex-start;
             background-color: white;
-            color: #343946;
+            color: ${colorDark};
             padding: 20px;
         }
         #cv1Div .line_top {
@@ -607,5 +614,20 @@ function printCV(event) {
         </style>`
     WinPrint.document.close();
     WinPrint.focus();
-    WinPrint.print();
+    if (event.target.id == 'print') {
+        WinPrint.print();
+    }
+
+}
+function changeColor() {
+    let colorDarkArray = ['#E9A507', '#FE7A66', '#D0021B', '#1F232E', '#39C3B1', '#BCA97E']
+    let colorLightArray = ['#F9D76C', '#FEB8A8', '#E74C3C', '#2C3E50', '#6DD5C8', '#D9C9A9']
+    let colorDark = colorDarkArray[document.getElementById('color').value]
+    let colorLight = colorLightArray[document.getElementById('color').value]
+
+    document.getElementById('cv1-left-pane').style.backgroundColor = colorLight
+    document.getElementById('cv1-left-pane').getElementsByTagName('h3')[0].style.backgroundColor = colorDark
+    document.getElementById('cv1-left-pane').getElementsByTagName('h3')[1].style.backgroundColor = colorDark
+    document.getElementById('cv1-left-pane').getElementsByTagName('h3')[2].style.backgroundColor = colorDark
+    document.getElementById('cv1-right-pane').style.color = colorDark
 }
