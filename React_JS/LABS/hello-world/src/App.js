@@ -2,7 +2,8 @@
 function App() {
   return (
     <>
-      Hello World!
+      <h1>Hello World!</h1>
+      <img src={"./images/img_1.jpg"} alt="ok"></img>
     </>
   );
 }
