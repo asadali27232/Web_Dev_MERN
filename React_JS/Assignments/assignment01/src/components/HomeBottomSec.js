@@ -13,11 +13,11 @@ function HomeBottomSec() {
                         </Link>
                     </div>
                     <div className="col-md-6 banner_form_section">
-                        <div className='banner_form h-44 my-16 mx-10'>
+                        <div className='banner_form'>
                             <h3>GET 5% OFF!</h3>
                             <h4>SIGN UP NOW TO OUR NEWSLETTER</h4>
 
-                            <div className="sign-up-input w-full">
+                            <div className="sign-up-input w-full mt-3">
                                 <input
                                     type="text"
                                     name="gift_code"
