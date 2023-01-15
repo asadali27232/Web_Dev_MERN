@@ -7,13 +7,11 @@ import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout'
 import Login from './pages/Login';
-import Header from './components/Header';
 import Wishlist from './pages/Wishlist';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
