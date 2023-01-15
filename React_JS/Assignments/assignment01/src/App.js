@@ -1,16 +1,18 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout'
-import Login from './pages/Login';
 import {
   BrowserRouter,
   Routes,
   Route,
   Link
 } from "react-router-dom";
+import Home from './pages/Home';
+import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout'
+import Login from './pages/Login';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         </ul>
         <hr />
       </div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />

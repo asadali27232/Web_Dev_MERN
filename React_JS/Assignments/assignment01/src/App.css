@@ -2,7 +2,14 @@
     padding: 0;
     margin: 0;
 }
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
 ul {
+    padding: 2px;
+    margin: 0;
     font-size: 12px;
     list-style: none;
     display: flex;
@@ -10,5 +17,14 @@ ul {
     justify-content: flex-start;
 }
 li {
+    text-decoration: none;
     margin: 2px 10px;
+}
+hr {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
