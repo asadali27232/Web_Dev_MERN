@@ -6,7 +6,7 @@ function Wishlist() {
   return (
     <>
       <Header navBg="white" fixed="" sticky="top" />
-      <h1>Style Guide</h1>
+      <h1>Wishlist</h1>
       <Footer />
     </>
   )
