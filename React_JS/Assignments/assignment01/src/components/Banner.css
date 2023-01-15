@@ -12,6 +12,7 @@
 @media (max-width: 640px) {
     .Banner {
         height: 70vh;
+        background-image: url(images/mobile-slider.jpg);
     }
 }
 .Banner button {

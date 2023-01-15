@@ -6,7 +6,7 @@ function HomeBottomSec() {
     return (
         <>
             <div className="col-12">
-                <div className="row m-0 py-20">
+                <div className="row m-0 pt-16">
                     <div className="col-md-6 m-0 p-0 h-max banner_image">
                         <Link className=' m-0 p-0' to="/">
                             <img src="images/home-bottom-banner.jpg" className='w-full' alt="BOTTOM BANNER" />

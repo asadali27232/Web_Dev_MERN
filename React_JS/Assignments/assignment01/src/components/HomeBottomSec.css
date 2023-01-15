@@ -15,7 +15,7 @@
     align-items: center;
     height: 200px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 70px;
 }
 @media (max-width: 766px) {
     .banner_form {
