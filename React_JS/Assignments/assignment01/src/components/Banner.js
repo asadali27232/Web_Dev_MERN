@@ -6,7 +6,7 @@ function Banner() {
     return (
         <div className="Banner">
             <Link to="/products">
-                <button type="button">
+                <button className='w-40 h-11 mb-10' type="button">
                     SHOP NOW
                 </button>
             </Link>

@@ -6,8 +6,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     justify-content: center;
+    height: 100vh;
+}
+@media (max-width: 640px) {
+    .Banner {
+        height: 70vh;
+    }
 }
 .Banner button {
     display: block;
@@ -15,9 +20,6 @@
     background: black;
     border: none;
     align-items: right;
-    margin: 0px 0px 34px 0px;
-    width: 150px;
     font-weight: 400;
-    height: 45px;
     cursor: pointer;
 }
