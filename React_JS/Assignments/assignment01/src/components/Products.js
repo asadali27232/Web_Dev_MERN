@@ -1,9 +1,11 @@
 import React from 'react'
+import './Products.css'
 
 function Products() {
-  return (
-    <div>Products</div>
-  )
+    return (
+        <>
+        </>
+    )
 }
 
 export default Products

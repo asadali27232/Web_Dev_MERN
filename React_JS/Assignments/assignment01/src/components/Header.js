@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 function Header(props) {
     return (
         <>
-            <Navbar className={`bg-${props.navColor}`} key={false} fixed="top" bg="light" expand={false}>
+            <Navbar className={`bg-${props.navColor}`} fixed={props.fixed} sticky={props.sticky} bg="light" expand={false}>
                 <Container fluid className="sm:pt-1 sm:pb-1 md:pt-5 md:pb-2">
                     <div className='flex justify-between justify-items-center w-full md:px-12'>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} />

@@ -2,14 +2,14 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-function CreateAccount() {
+function ProductsPage() {
   return (
     <>
       <Header navBg="white" fixed="" sticky="top" />
-      <h1>Create Account</h1>
+      <h1>Products</h1>
       <Footer />
     </>
   )
 }
 
-export default CreateAccount
+export default ProductsPage

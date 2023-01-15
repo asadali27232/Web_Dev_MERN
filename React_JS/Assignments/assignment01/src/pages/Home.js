@@ -24,7 +24,7 @@ function Home() {
             <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave}>
                 <div></div>
             </Waypoint>
-            <Header navColor={navBg} />
+            <Header navColor={navBg} fixed="top" sticky="" />
             <hr />
             <Banner />
             <div className='row h-max m-0 w-full py-16 sm:px-4 md:px-12 lg:px-20 xl:px-32'>

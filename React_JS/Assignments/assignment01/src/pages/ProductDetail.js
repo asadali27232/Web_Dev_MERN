@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function ProductDetail() {
   return (
-    <div>ProductDetail</div>
+    <>
+      <Header navBg="white" fixed="" sticky="top" />
+      <h1>Product Detail</h1>
+      <Footer />
+    </>
   )
 }
 
