@@ -13,19 +13,11 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout'
 import Login from './pages/Login';
 import Header from './components/Header';
+import Wishlist from './pages/Wishlist';
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/product">ProductDetail</Link></li>
-          <li><Link to="/login">Login</Link></li>
-        </ul>
-        <hr />
-      </div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
     </BrowserRouter>
   );
