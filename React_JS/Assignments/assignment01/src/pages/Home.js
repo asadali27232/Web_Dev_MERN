@@ -6,6 +6,7 @@ import { Waypoint } from 'react-waypoint';
 import { useState } from 'react';
 import Card from '../components/Card';
 import Categories from '../data/Categories';
+import HomeBottomSec from '../components/HomeBottomSec';
 
 function Home() {
     const [navBg, setNavBg] = useState('transparent');
@@ -17,7 +18,6 @@ function Home() {
     const handleWaypointLeave = () => {
         setNavBg('white');
     }
-    console.log(Categories)
     return (
         <>
             <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave}>
@@ -26,12 +26,13 @@ function Home() {
             <Header navColor={navBg} />
             <hr />
             <Banner />
-            <div className='row h-max m-0 w-full py-16 sm:px-4 md:px-12 lg:px-20 xl:px-32'>
+            <div className='row h-max m-0 w-full md:py-16 sm:px-4 md:px-12 lg:px-20 xl:px-32'>
                 {Categories.map((cat) => (
-                    <div className='col-12 col-md-4'>
+                    <div key={cat.key} className='col-12 col-md-4'>
                         <Card category={`${cat.category}`} imageSrc={`${cat.imgSrc}`} />
                     </div>
                 ))}
+                <HomeBottomSec />
             </div>
         </>
     )
