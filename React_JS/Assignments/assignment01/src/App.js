@@ -14,27 +14,25 @@ import {
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <div>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            <li><Link to="/product">ProductDetail</Link></li>
-            <li><Link to="/login">Login</Link></li>
-          </ul>
-          <hr />
-        </div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/product" element={<ProductDetail />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <div>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/product">ProductDetail</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+        <hr />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/product" element={<ProductDetail />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
