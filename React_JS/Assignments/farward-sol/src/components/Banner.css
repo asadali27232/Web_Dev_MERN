@@ -1,26 +1,63 @@
 .Banner {
     display: flex;
-    align-items: flex-end;
-    align-content: center;
-    background-image: url(images/main_slider_desktop.jpg);
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/intro-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    justify-content: center;
     height: 100vh;
 }
 @media (max-width: 640px) {
     .Banner {
         height: 70vh;
-        background-image: url(images/mobile-slider.jpg);
+        background-image: url(images/intro-bg.jpg);
     }
+}
+a {
+    text-decoration: none;
 }
 .Banner button {
     display: block;
     color: white;
-    background: black;
+    background: #0098cd;
     border: none;
     align-items: right;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 20px;
+    width: 200px;
+    height: 56px;
+    border-radius: 10px;
+    text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+.Banner button:hover {
+    color: #0098cd;
+    background: transparent;
+    border: 1px solid #0098cd;
+}
+.Banner .intro-box {
+    width: 100%;
+    height: inherit;
+}
+.Banner .intro-text {
+    padding: 0;
+}
+.Banner h1 {
+    color: #000000;
+}
+.Banner p {
+    color: #555659;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+.Banner .intro-img {
+    background-image: url(images/intro-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
 }
