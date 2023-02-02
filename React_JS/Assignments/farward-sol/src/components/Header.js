@@ -1,17 +1,15 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import './Header.css'
 
-function Header(props) {
+function Header() {
     return (
         <>
-            <Navbar className={`bg-${props.navColor}`} fixed={props.fixed} sticky={props.sticky} bg="light" expand={false}>
+            <Navbar className="transparent" fixed={true} sticky={false} bg="light" expand={false}>
                 <Container fluid className="sm:pt-1 sm:pb-1 md:pt-5 md:pb-2">
                     <div className='flex justify-between justify-items-center w-full md:px-12'>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} />
