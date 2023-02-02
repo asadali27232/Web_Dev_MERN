@@ -1,0 +1,26 @@
+.Banner {
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    background-image: url(images/main_slider_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (max-width: 640px) {
+    .Banner {
+        height: 70vh;
+        background-image: url(images/mobile-slider.jpg);
+    }
+}
+.Banner button {
+    display: block;
+    color: white;
+    background: black;
+    border: none;
+    align-items: right;
+    font-weight: 400;
+    cursor: pointer;
+}
