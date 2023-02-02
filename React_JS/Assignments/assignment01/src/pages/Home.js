@@ -29,7 +29,7 @@ function Home() {
             <Banner />
             <div className='row h-max m-0 w-full py-16 sm:px-4 md:px-12 lg:px-20 xl:px-32'>
                 {Categories.map((cat) => (
-                    <div key={cat.key} className='col-12 col-md-4'>
+                    <div key={cat.key} className='col-12 col-md-6 col-lg-4'>
                         <Card category={`${cat.category}`} imageSrc={`${cat.imgSrc}`} />
                     </div>
                 ))}
