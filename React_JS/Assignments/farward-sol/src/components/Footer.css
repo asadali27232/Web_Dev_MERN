@@ -1,29 +1,10 @@
 footer .foot1 {
-    padding: 30px 150px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f6f6f6;
-}
-@media (max-width: 640px) {
-    footer .foot1 {
-        padding: 30px 0px;
-    }
-    .foot1-ul {
-        flex-direction: column;
-    }
-    footer .ver_bar {
-        visibility: hidden;
-        display: none;
-    }
-    footer a,
-    footer li {
-        margin: 0px 8px;
-    }
-}
-footer .foot1 li {
-    font-size: 14px;
+    background-color: #f5f8fd;
 }
 footer .ver_bar {
     height: 12px;
@@ -34,40 +15,100 @@ footer ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
-footer a,
-footer li {
+footer a {
     display: inline-block;
-    margin: 4px 8px;
     text-decoration: none;
     color: #737373;
     list-style: none;
+    margin: 10px 5px;
+    cursor: pointer;
 }
 footer .social_icons {
-    padding-top: 12px;
+    margin-top: 12px;
 }
 footer .foot2 {
     color: white;
-    text-align: center;
     height: 45px;
-    background-color: black;
+    background-color: #0098cd;
 }
 footer span {
     padding: 0;
     margin: 0;
     font-family: inherit;
-    font-size: 11px;
-    letter-spacing: 1px;
+    font-size: 16px;
     line-height: 45px;
+    font-weight: 600;
 }
-footer a:hover {
-    color: black;
-    font-weight: 400;
-    text-decoration: underline;
-    cursor: pointer;
+footer .row {
+    width: 100%;
 }
-footer li:hover {
+footer h3 {
+    color: #0098cd;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+footer .col {
+    padding: 0px 28px;
+}
+footer p {
+    color: #555659;
     cursor: pointer;
+    font-size: 17px;
+}
+footer p:hover {
+    color: #0098cd;
+}
+footer .social-icon {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #0098cd;
+    height: 50px;
+    width: 50px;
+    transition: background-color 0.5s ease;
+    transition: background-image 0.5s ease;
+}
+footer .social-icon:hover {
+    background-color: #0098cd;
+}
+footer .fb-icon {
+    background-image: url(images/icons8_facebook_f_64px_1.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+footer .fb-icon:hover {
+    background-image: url(images/icons8_facebook_f_64px_2.png);
+}
+footer .in-icon {
+    background-image: url(images/icons8_linkedin_2_64px_1.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+footer .in-icon:hover {
+    background-image: url(images/icons8_linkedin_2_64px_2.png);
+}
+footer .instagram-icon {
+    background-image: url(images/icons8_Instagram_64px.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+footer .instagram-icon:hover {
+    background-image: url(images/icons8_Instagram_64px_2.png);
+}
+footer .whatsapp-icon {
+    background-image: url(images/icons8_whatsapp_64px.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+footer .whatsapp-icon:hover {
+    background-image: url(images/icons8_whatsapp_64px_2.png);
 }

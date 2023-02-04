@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <Banner handleClick={handleClick} />
-      <div className='pt-24' ref={myRef}>
+      <div className='pt-24 px-32' ref={myRef}>
         <h2>Div to Scroll To</h2>
       </div>
     </>
