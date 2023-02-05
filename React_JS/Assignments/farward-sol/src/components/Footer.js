@@ -18,6 +18,7 @@ function Footer() {
                         <p>Mobile App Development</p>
                         <p>Digital Marketing</p>
                         <p>Technical Skills Trainings</p>
+                        <p>Shopify/Wordpress Development</p>
                     </div>
                     <div className="col col-3">
                         <h3>CONTACTS</h3>

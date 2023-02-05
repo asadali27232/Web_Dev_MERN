@@ -7,6 +7,7 @@ header {
     height: 80px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px -2px gray;
+    z-index: 10;
 }
 header .logo {
     background-image: url(images/logo.png);
@@ -27,4 +28,7 @@ nav a {
 nav a:hover {
     color: #0098cd;
     margin: 0px 10px;
+}
+nav .active-tab {
+    color: #0098cd;
 }
