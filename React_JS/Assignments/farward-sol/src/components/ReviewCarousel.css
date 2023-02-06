@@ -1,0 +1,38 @@
+.review {
+    width: 80%;
+    height: 280px;
+    background-color: #ddf1fc;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: auto;
+}
+.review .rew {
+    width: 75%;
+    font-size: 16px;
+} 
+.review .pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 3px solid #0098cd;
+    background-image: url(images/Asad.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.review .company {
+    color: #0098cd;
+    font-weight: 500;
+    font-size: 16px;
+}
+.review .quote {
+background-image: url(images/icons8_quote_64px.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}

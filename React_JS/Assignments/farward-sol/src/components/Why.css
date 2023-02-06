@@ -1,0 +1,52 @@
+.why {
+    background: #f5f8fd;
+}
+.stat-box {
+    box-shadow: 0 0.25em 0.25em -0.5em rgba(0, 0, 0, 0.25),
+        0 0.5em 0.8em rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: white;
+}
+.stat-box img {
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 3px solid #0098cd;
+}
+.why .circle {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.why p {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    color: #555659;
+    font-size: 17px;
+}
+.why .c1 {
+    border: 3px solid #83c416;
+}
+.why .c2 {
+    border: 3px solid #fdaf3d;
+}
+.why .c3 {
+    border: 3px solid #eb407a;
+}
+.why .c4 {
+    border: 3px solid #9577cb;
+}

@@ -18,12 +18,12 @@ function Footer() {
                         <p>Mobile App Development</p>
                         <p>Digital Marketing</p>
                         <p>Technical Skills Trainings</p>
-                        <p>Shopify/Wordpress Development</p>
+                        <p>Shopify/WP Development</p>
                     </div>
                     <div className="col col-3">
                         <h3>CONTACTS</h3>
                         <p>Address: Forward Solutions 3rd Floor Arfa Tower, Ferozpur Road, Lahore</p>
-                        <p>Email: forwardlogics@gmail.com</p>
+                        <p>Email: forwardsolutions@gmail.com</p>
                         <p>Phone: +92 321 8720063</p>
                     </div>
                     <div className="col col-3" style={{ paddingRight: '0px' }}>

@@ -11,6 +11,7 @@
     border-bottom-right-radius: 20px;
     transition: margin 0.5s ease;
     height: 460px;
+    overflow: hidden;
 }
 .card button {
     color: white;
@@ -40,4 +41,7 @@
 .card:hover {
     margin-top: 36px;
     box-shadow: 0 0.25em 0.25em -0.1em #0096cdce, 0 0.5em 0.75em #0096cdcc;
+}
+.card p {
+    color: #555659;
 }

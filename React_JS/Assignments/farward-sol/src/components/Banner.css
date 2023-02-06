@@ -44,6 +44,11 @@ a {
 }
 .Banner .intro-text {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    overflow: hidden;
 }
 .Banner h1 {
     color: #000000;
@@ -52,7 +57,7 @@ a {
     color: #555659;
     font-size: 20px;
     font-weight: 400;
-    margin: 30px 0px;
+    margin: 40px 0px;
 }
 .Banner .intro-img {
     background-image: url(images/intro-img.svg);
