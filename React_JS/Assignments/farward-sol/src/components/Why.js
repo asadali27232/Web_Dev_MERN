@@ -20,7 +20,7 @@ function Why() {
                             <img src="images/icons8_microsoft_project_64px.png" alt="Img" />
                             <p>Projects Completed</p>
                             <div className="circle c1">
-                                {counter && <CountUp start={100} end={300} duration={3} suffix='+' />}
+                                {counter && <CountUp start={100} end={500} duration={3} suffix='+' />}
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ function Why() {
                             <img src="images/icons8_customer_insight_64px.png" alt="Img" />
                             <p>Happy Clients</p>
                             <div className="circle c3">
-                                {counter && <CountUp start={100} end={500} duration={3} suffix='+' />}
+                                {counter && <CountUp start={100} end={300} duration={3} suffix='+' />}
                             </div>
                         </div>
                     </div>
