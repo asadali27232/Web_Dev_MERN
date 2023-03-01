@@ -65,9 +65,9 @@ function CRUD() {
                                         />
                                     </div>
                                     <div class="prd-buy">
-                                        <img
+                                        <img    
                                             id="0"
-                                            src="images/icons8_cancel_64px.png"
+                                            src="images/icons8_xbox_x_60px.png"
                                             alt="BUY"
                                         />
                                     </div>
