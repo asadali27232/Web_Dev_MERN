@@ -49,13 +49,21 @@ function CRUD() {
                                 <div class="prd-id"><p>ID</p></div>
                                 <div class="prd-name"><p>NAME</p></div>
                                 <div class="prd-price"><p>PRICE</p></div>
-                                <div class="prd-buy"><p>BUY</p></div>
+                                <div class="prd-buy"><p>EDIT</p></div>
+                                <div class="prd-buy"><p>DELETE</p></div>
                             </div>
                             <div class="prd-box">
                                 <div class="prd">
                                     <div class="prd-id"><p>PRD101</p></div>
-                                    <div class="prd-name"><p>CAKE 1 POUND</p></div>
+                                    <div class="prd-name"><p>DUMMY PRD</p></div>
                                     <div class="prd-price"><p>RS 700</p></div>
+                                    <div class="prd-buy">
+                                        <img
+                                            id="0"
+                                            src="images/icons8_fast_cart_60px.png"
+                                            alt="BUY"
+                                        />
+                                    </div>
                                     <div class="prd-buy">
                                         <img
                                             id="0"
