@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './CRUD.css'
 
 function CRUD() {
+    const addNewProduct = () => {
+        alert("Product added")
+    }
     return (
         <>
             <div class="container-fluid">
@@ -31,7 +34,7 @@ function CRUD() {
                                     <button
                                         id="btn-add-new-prd"
                                         class="btn-add-product"
-                                        onclick="addNewProduct('btn-add-new-prd')"
+                                        onClick={addNewProduct}
                                     >
                                         ADD
                                     </button>
@@ -58,7 +61,6 @@ function CRUD() {
                                             id="0"
                                             src="images/icons8_fast_cart_60px.png"
                                             alt="BUY"
-                                            onclick="addToCart('0')"
                                         />
                                     </div>
                                 </div>
