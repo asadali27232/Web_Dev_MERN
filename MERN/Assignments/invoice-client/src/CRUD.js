@@ -6,6 +6,12 @@ function CRUD() {
     const addNewProduct = () => {
         alert("Product added")
     }
+    const editPrd = () => {
+        alert("Product edited")
+    }
+    const deletePrd = () => {
+        alert("Product deleted")
+    }
     return (
         <>
             <div class="container-fluid">
@@ -57,15 +63,21 @@ function CRUD() {
                                     <div class="prd-id"><p>PRD101</p></div>
                                     <div class="prd-name"><p>DUMMY PRD</p></div>
                                     <div class="prd-price"><p>RS 700</p></div>
-                                    <div class="prd-buy">
+                                    <div
+                                        class="prd-buy"
+                                        onClick={editPrd}
+                                    >
                                         <img
                                             id="0"
                                             src="images/icons8_edit_48px.png"
                                             alt="BUY"
                                         />
                                     </div>
-                                    <div class="prd-buy">
-                                        <img    
+                                    <div
+                                        class="prd-buy"
+                                        onClick={deletePrd}
+                                    >
+                                        <img
                                             id="0"
                                             src="images/icons8_xbox_x_60px.png"
                                             alt="BUY"
