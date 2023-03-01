@@ -60,14 +60,14 @@ function CRUD() {
                                     <div class="prd-buy">
                                         <img
                                             id="0"
-                                            src="images/icons8_fast_cart_60px.png"
+                                            src="images/icons8_edit_48px.png"
                                             alt="BUY"
                                         />
                                     </div>
                                     <div class="prd-buy">
                                         <img
                                             id="0"
-                                            src="images/icons8_fast_cart_60px.png"
+                                            src="images/icons8_cancel_64px.png"
                                             alt="BUY"
                                         />
                                     </div>
