@@ -7,17 +7,15 @@ function CRUD() {
     const [price, setPrice] = useState('');
 
     const handleNameChange = (event) => {
-        alert("Name Change", event.target.value)
         setName(event.target.value);
     };
     const handlePriceChange = (event) => {
-        alert("Price Change", event.target.value)
         setPrice(event.target.value);
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert('Input values:', name, ' ', price);
+        console.log('Input values: ', name, ' ', price);
     }
     const editPrd = () => {
         alert("Product edited")
