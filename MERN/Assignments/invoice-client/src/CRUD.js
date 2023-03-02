@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CRUD.css'
 
 function CRUD() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/product/getProduct')
+            .then((response) => {
+                setProducts(response.data);
+            })
+            .catch((error) => {
+                console.error('Error fetching products:', error);
+            });
+    }, []);
+
     const [prdID, setPrdID] = useState(1000);
     const [prdName, setPrdName] = useState('');
     const [prdPrice, setPrdPrice] = useState('');
@@ -89,31 +101,39 @@ function CRUD() {
                             <div className="prd-buy"><p>DELETE</p></div>
                         </div>
                         <div className="prd-box">
-                            <div className="prd">
-                                <div className="prd-id"><p>PRD101</p></div>
-                                <div className="prd-name"><p>DUMMY PRD</p></div>
-                                <div className="prd-price"><p>RS 700</p></div>
-                                <div
-                                    className="prd-buy"
-                                    onClick={editPrd}
-                                >
-                                    <img
-                                        id="0"
-                                        src="images/icons8_edit_48px.png"
-                                        alt="BUY"
-                                    />
+                            {products.map((product) => (
+                                <div key={product.prdID} className="prd">
+                                    <div className="prd-id">
+                                        <p>{product.prdID}</p>
+                                    </div>
+                                    <div className="prd-name">
+                                        <p>{product.prdName}</p>
+                                    </div>
+                                    <div className="prd-price">
+                                        <p>{product.prdPrice}</p>
+                                    </div>
+                                    <div
+                                        className="prd-buy"
+                                        onClick={editPrd}
+                                    >
+                                        <img
+                                            id="0"
+                                            src="images/icons8_edit_48px.png"
+                                            alt="BUY"
+                                        />
+                                    </div>
+                                    <div
+                                        className="prd-buy"
+                                        onClick={deletePrd}
+                                    >
+                                        <img
+                                            id="0"
+                                            src="images/icons8_xbox_x_60px.png"
+                                            alt="BUY"
+                                        />
+                                    </div>
                                 </div>
-                                <div
-                                    className="prd-buy"
-                                    onClick={deletePrd}
-                                >
-                                    <img
-                                        id="0"
-                                        src="images/icons8_xbox_x_60px.png"
-                                        alt="BUY"
-                                    />
-                                </div>
-                            </div>
+                            ))}
                             <div />
                         </div>
                     </div>
