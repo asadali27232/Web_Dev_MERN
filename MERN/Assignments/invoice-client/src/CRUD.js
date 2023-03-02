@@ -21,7 +21,8 @@ function CRUD() {
 
         axios.post('http://localhost:3001/product/addProduct', { prdID, prdName, prdPrice })
             .then((response) => {
-                alert('Product added successfully!');
+                alert('Product added successfully!\n', response);
+                console.log(response)
                 setPrdName('');
                 setPrdPrice('');
                 setPrdID(prdID + 1)
