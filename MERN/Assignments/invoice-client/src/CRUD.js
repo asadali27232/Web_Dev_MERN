@@ -17,11 +17,9 @@ function CRUD() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Input values: ', prdName, ' ', prdPrice);
-
         axios.post('http://localhost:3001/product/addProduct', { prdID, prdName, prdPrice })
             .then((response) => {
-                alert('Product added successfully!\n', response);
+                alert('Product added successfully!');
                 console.log(response)
                 setPrdName('');
                 setPrdPrice('');
