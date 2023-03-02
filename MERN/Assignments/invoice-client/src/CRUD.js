@@ -1,21 +1,34 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CRUD.css'
 
 function CRUD() {
-    const [name, setName] = useState('');
-    const [price, setPrice] = useState('');
+    const [prdID, setPrdID] = useState(1000);
+    const [prdName, setPrdName] = useState('');
+    const [prdPrice, setPrdPrice] = useState('');
 
     const handleNameChange = (event) => {
-        setName(event.target.value);
+        setPrdName(event.target.value);
     };
     const handlePriceChange = (event) => {
-        setPrice(event.target.value);
+        setPrdPrice(event.target.value);
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Input values: ', name, ' ', price);
+        console.log('Input values: ', prdName, ' ', prdPrice);
+
+        axios.post('http://localhost:3001/product/addProduct', { prdID, prdName, prdPrice })
+            .then((response) => {
+                alert('Product added successfully!');
+                setPrdName('');
+                setPrdPrice('');
+                setPrdID(prdID + 1)
+            })
+            .catch((error) => {
+                console.error('Error adding product:', error);
+            });
     }
     const editPrd = () => {
         alert("Product edited")
@@ -37,9 +50,9 @@ function CRUD() {
                                     <input
                                         type="text"
                                         id="add-prd-name"
-                                        name='name'
+                                        name='prdName'
                                         placeholder="New Product Name"
-                                        value={name}
+                                        value={prdName}
                                         onChange={handleNameChange}
                                     />
                                 </div>
@@ -47,9 +60,9 @@ function CRUD() {
                                     <input
                                         type="text"
                                         id="add-prd-price"
-                                        name='price'
+                                        name='prdPrice'
                                         placeholder="New Product Price"
-                                        value={price}
+                                        value={prdPrice}
                                         onChange={handlePriceChange}
                                     />
                                 </div>
