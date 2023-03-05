@@ -1,3 +1,4 @@
+const UserModel = require("../Models/UserModel")
 let userModel = require("../Models/UserModel")
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
                 res.send("ERR! Something Went Wrong " + err)
             })
     },
+
     login: function (req, res) {
         userModel
             .find()
