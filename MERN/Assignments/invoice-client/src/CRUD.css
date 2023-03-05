@@ -362,3 +362,7 @@ p {
 input {
     margin: 30px 0;
 }
+.hide {
+  display: none;
+  visibility: hidden;
+}
