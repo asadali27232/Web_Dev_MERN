@@ -1,0 +1,14 @@
+{
+  "name": "login-signup-server",
+  "version": "1.0.0",
+  "description": "A server for my Login Sign up api practice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asad Ali",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
