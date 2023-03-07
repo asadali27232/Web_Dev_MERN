@@ -14,7 +14,6 @@ function SignUp() {
 
     const submit = (event) => {
         event.preventDefault()
-        alert(`${name} ${email} ${password} ${username} ${phone}`)
         axios
             .post("http://localhost:5000/user/signup", {
                 name,
@@ -25,6 +24,7 @@ function SignUp() {
             })
             .then((response) => {
                 console.log(response)
+                alert(`User added successfully! Please login`)
                 setName("")
                 setUsername("")
                 setEmail("")

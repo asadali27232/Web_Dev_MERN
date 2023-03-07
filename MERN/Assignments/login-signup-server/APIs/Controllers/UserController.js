@@ -35,18 +35,31 @@ module.exports = {
                         res.send({ message: "Welcome Back!", authToken })
                     } else {
                         res.status(401).send({
-                            message: "Incorrect email or password1!",
+                            message: "Incorrect email or password!",
                         })
                     }
                 } else {
                     res.status(401).send({
-                        message: "Incorrect email or password2!",
+                        message: "Incorrect email or password!",
                     })
                 }
             })
             .catch((err) => {
                 console.error(err)
                 res.status(500).send({ message: "Server error" })
+            })
+    },
+
+    userdetail: function (req, res) {
+        userModel
+            .findById(req.user.id)
+            .select("-password")
+            .then((user) => {
+                res.send(user)
+            })
+            .catch((err) => {
+                console.error(err)
+                res.status(500).send({ message: "Internal Server error" })
             })
     },
 }
