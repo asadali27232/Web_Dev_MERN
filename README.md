@@ -1,5 +1,6 @@
 # Web_Dev_MERN
 
+
 This repository contains the code for a full-stack web application built using the MERN (MongoDB, Express, React, Node.js) stack. The application allows users to create and manage their own profiles, create posts, and interact with other users by commenting on and liking their posts.
 
 ## Technologies Used
