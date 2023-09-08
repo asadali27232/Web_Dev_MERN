@@ -5,15 +5,15 @@ This repository contains the code for a full-stack web application built using t
 
 ## Technologies Used
 
-![HTML](https://img.shields.io/badge/-HTML-orange)
-![CSS](https://img.shields.io/badge/-CSS-blue)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-purple)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
-![React](https://img.shields.io/badge/-React-blue)
-![Node.js](https://img.shields.io/badge/-Node.js-green)
-![Express](https://img.shields.io/badge/-Express-red)
-![MongoDB](https://img.shields.io/badge/-MongoDB-green)
-![Redux](https://img.shields.io/badge/-Redux-purple)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-2965f1?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-68A063?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 
 - HTML (Hypertext Markup Language) is the standard markup language used to create web pages
 - CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a webpage
